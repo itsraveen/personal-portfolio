@@ -1,5 +1,7 @@
 .container {
     margin: auto;
-    padding-top: 4rem; /* Adjust the value to match the height of your navbar */
-    background-color: pink;
+    padding-top: 0rem; /* Adjust the value to match the height of your navbar */
+    width: 100%;
+    align-items: center;
+    padding: 0rem;
 }

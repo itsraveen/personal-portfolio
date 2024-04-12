@@ -2,16 +2,15 @@
 
 import * as React from 'react'
 
-import  '../css/hero.module.css'
+import * as styles from  '../css/hero.module.css'
 
 const Hero = () => {
   return (
-    <header className="hero">
-      <div className="hero-image" />
-      <div className="hero-content">
+    <header className={styles.hero}>
+      {/* <div className="hero-content">
         <h1>Welcome to my Website</h1>
-        <p>Some introductory text...</p>
-      </div>
+        {/* <p>Some introductory text...</p> 
+      </div> */}
     </header>
   )
 }

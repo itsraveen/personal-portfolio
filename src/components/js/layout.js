@@ -1,10 +1,11 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+
 import {
   container,
   heading
 } from '../css/layout.module.css'
 import Hero from './hero'
+
 
 const Layout = ({ pageTitle, children }) => {
   return (
@@ -12,7 +13,7 @@ const Layout = ({ pageTitle, children }) => {
       <div className={container}>
         <main>
           <Hero />
-          <h1 className={heading}>{pageTitle}</h1>
+          <h1 className={heading}>{pageTitle}</h1> 
           {children}
         </main>
       </div>

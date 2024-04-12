@@ -1,20 +1,23 @@
 /* Navbar.module.css */
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: rgba(27, 30, 32, 0.902);
-    color: #fff;
-    transition: all 0.5s;
-    font-family: "Open Sans", sans-serif;
+/* Navbar.module.css */
 
-    position: fixed; /* Position the navbar fixed at the top */
-    top: 0; /* Place the navbar at the top of the viewport */
-    width: 100%; /* Make the navbar full-width */
-    z-index: 1000; /* Ensure the navbar appears above other content */
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(27, 30, 32, 0.902);
+  color: #fff;
+  transition: all 0.5s;
+  font-family: "Open Sans", sans-serif;
+
+  position: fixed; /* Position the navbar fixed at the top */
+  top: 0; /* Place the navbar at the top of the viewport */
+  width: 100%; /* Make the navbar full-width */
+  z-index: 1000; /* Ensure the navbar appears above other content */
+}
+
   
   .navbarLeft {
     flex: 1; /* Take up remaining space */

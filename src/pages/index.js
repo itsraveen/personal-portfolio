@@ -1,14 +1,9 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/js/layout"
-import Hero from "../components/js/hero"
 import Navbar from '../components/js/navbar';
-import Seo from "../components/js/seo"
-import * as styles from "../components/css/index.module.css"
 
-// Step 2: Define your component
 const IndexPage = () => {
   return (
     <div>
@@ -24,11 +19,6 @@ const IndexPage = () => {
   )
 }
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
 export const Head = () => <title>Home Page</title>
 
 export default IndexPage
