@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-import  './hero.module.css'
+import  '../css/hero.module.css'
 
 const Hero = () => {
   return (

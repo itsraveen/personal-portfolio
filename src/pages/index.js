@@ -2,11 +2,11 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
-import Hero from "../components/hero"
-import Navbar from '../components/navbar';
-import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
+import Layout from "../components/js/layout"
+import Hero from "../components/js/hero"
+import Navbar from '../components/js/navbar';
+import Seo from "../components/js/seo"
+import * as styles from "../components/css/index.module.css"
 
 // Step 2: Define your component
 const IndexPage = () => {

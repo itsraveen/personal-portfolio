@@ -3,14 +3,15 @@ import { Link } from 'gatsby'
 import {
   container,
   heading
-} from './layout.module.css'
-import Navbar from './navbar';
+} from '../css/layout.module.css'
+import Hero from './hero'
 
 const Layout = ({ pageTitle, children }) => {
   return (
     <div>
       <div className={container}>
         <main>
+          <Hero />
           <h1 className={heading}>{pageTitle}</h1>
           {children}
         </main>
