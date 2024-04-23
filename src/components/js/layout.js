@@ -5,6 +5,7 @@ import {
   heading
 } from '../css/layout.module.css'
 import Hero from './hero'
+import FooterBar from "./footerbar"
 
 
 const Layout = ({ pageTitle, children }) => {
@@ -13,8 +14,8 @@ const Layout = ({ pageTitle, children }) => {
       <div className={container}>
         <main>
           <Hero />
-          <h1 className={heading}>{pageTitle}</h1> 
-          {children}
+
+          <FooterBar />
         </main>
       </div>
     </div>

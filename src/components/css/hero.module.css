@@ -1,5 +1,5 @@
 .hero {
-  height: calc(100vh - 20px);
+  height: calc(100vh - 0px);
   width: 100vw; /* Change width to viewport width */
   max-width: 100%; /* Ensure it doesn't exceed the viewport width */
   background-color: pink !important; /* Ensure pink background */
