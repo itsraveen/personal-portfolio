@@ -1,10 +1,12 @@
 .hero {
   height: calc(100vh - 20px);
-  width: 100%;
+  width: 100vw; /* Change width to viewport width */
+  max-width: 100%; /* Ensure it doesn't exceed the viewport width */
   background-color: pink !important; /* Ensure pink background */
   position: relative;
   left: 0; /* Align the text to the left */
 }
+
 
 .hero-content {
   position: absolute;
@@ -15,7 +17,6 @@
   color: white;
 }
 
-
 .imageSide {
   flex: 1;
   display: flex;
@@ -23,21 +24,11 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 50rem;
-  top: 10rem;
-}
-
-.imageSide img {
+  left: 50rem; /* You may need to adjust this based on your layout */
+  top: 10rem; /* You may need to adjust this based on your layout */
   width: 30%;
-  height: auto;
-  object-fit: cover;
 }
 
-.imageSide p {
-  position: absolute;
-  bottom: 20px; /* Adjust based on your design */
-  color: white; /* Or any other color based on the image */
-}
 
 .name,
 .designer,

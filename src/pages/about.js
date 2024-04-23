@@ -9,10 +9,6 @@ const AboutPage = () => {
   return (
     <div>
       <Navbar />
-      
-      <Layout pageTitle="About">
-
-      </Layout>
     </div>
     
   )
