@@ -1,16 +1,15 @@
 import * as React from "react"
 
-
-import Layout from "../components/js/layout"
+import Hero from '../components/js/hero';
 import Navbar from '../components/js/navbar';
+import FooterBar from "../components/js/footerbar"
 
 const IndexPage = () => {
   return (
     <div>
       <Navbar />
-      <Layout pageTitle="Home Page">
-
-      </Layout>
+      <Hero />
+      <FooterBar />
     </div>
   )
 }

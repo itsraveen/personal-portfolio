@@ -5,8 +5,6 @@ import {
   heading
 } from '../css/layout.module.css'
 import Hero from './hero'
-import FooterBar from "./footerbar"
-
 
 const Layout = ({ pageTitle, children }) => {
   return (
@@ -15,7 +13,7 @@ const Layout = ({ pageTitle, children }) => {
         <main>
           <Hero />
 
-          <FooterBar />
+
         </main>
       </div>
     </div>
