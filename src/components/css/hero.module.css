@@ -2,7 +2,7 @@
   height: calc(100vh - 0px);
   width: 100vw; /* Change width to viewport width */
   max-width: 100%; /* Ensure it doesn't exceed the viewport width */
-  background-color: pink !important; /* Ensure pink background */
+  background-color: #f8f8f8 !important; /* Ensure pink background */
   position: relative;
   left: 0; /* Align the text to the left */
 }
@@ -24,10 +24,12 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 50rem; /* You may need to adjust this based on your layout */
-  top: 10rem; /* You may need to adjust this based on your layout */
-  width: 30%;
+  left: 55%; /* Set left position as a percentage of the viewport width */
+  top: 20%; /* Set top position as a percentage of the viewport height */
+  width: 30%; /* Set width as a percentage of the viewport width */
 }
+
+
 
 
 .name,
