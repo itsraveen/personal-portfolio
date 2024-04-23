@@ -1,7 +1,7 @@
 .container {
-    margin: auto;
-    padding-top: 0rem; /* Adjust the value to match the height of your navbar */
-    width: 100%;
-    align-items: center;
-    padding: 0rem;
-}
+    /* margin-top: 60px;  */
+    /* padding-top: 16px;  */
+    width: 100% /* Make the container full-width with 16px less */
+    /* margin-left: 8px;  */
+  }
+  

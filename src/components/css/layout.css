@@ -32,6 +32,7 @@ html {
   font-size: var(--font-md);
   line-height: var(--line-height-normal);
   overflow-y: scroll;
+  padding: 0;
 }
 body {
   -moz-osx-font-smoothing: grayscale;

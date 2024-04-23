@@ -9,11 +9,7 @@ const IndexPage = () => {
     <div>
       <Navbar />
       <Layout pageTitle="Home Page">
-        <p>I'm making this by following the Gatsby Tutorial.</p>
-        <StaticImage
-          alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
-          src="../images/example.png"
-        />
+
       </Layout>
     </div>
   )

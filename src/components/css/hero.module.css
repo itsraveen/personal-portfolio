@@ -1,10 +1,19 @@
-/* hero.module.css */
-
 .hero {
-  position: relative;
-  height: 100vh; /* Adjust height to fill remaining viewport space */
-  width: 120lh; /* Make the hero section full-width */
+  height: calc(100vh - 20px);
+  width: 100%;
   background-color: pink !important; /* Ensure pink background */
+  position: relative;
+  left: 0; /* Align the text to the left */
+}
+
+.textSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5%; /* Adjust based on your design */
+  background: linear-gradient(to bottom, #f8b195, #f67280, #c06c84, #6c5b7b, #355c7d); /* Color gradient similar to the image */
 }
 
 .hero-content {
@@ -14,4 +23,41 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+}
+
+.textSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5%; /* Adjust based on your design */
+  position: absolute;
+  top: 20vh; /* Shift down */
+  left: 10vw; /* Shift right */
+  background: linear-gradient(to bottom, #f8b195, #f67280, #c06c84, #6c5b7b, #355c7d); /* Color gradient similar to the image */
+}
+
+
+.imageSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 15rem;
+  top: 15rem
+}
+
+.imageSide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.imageSide p {
+  position: absolute;
+  bottom: 20px; /* Adjust based on your design */
+  color: white; /* Or any other color based on the image */
 }
