@@ -1,25 +1,44 @@
-import * as React from 'react'
-import * as styles from '../css/hero.module.css'
-
+import React, { useEffect } from 'react';
+import Typed from 'typed.js'; // Import Typed.js library
+import * as styles from '../css/hero.module.css';
 import { StaticImage } from "gatsby-plugin-image"
 
 const Hero = () => {
+  useEffect(() => {
+    // Check if Typed element exists in the DOM
+    const typedElement = document.querySelector('.typed');
+    
+    if (typedElement) {
+      // Get the typed strings from the data attribute
+      let typedStrings = typedElement.getAttribute('data-typed-items').split(',');
+
+      // Initialize Typed.js
+      new Typed('.typed', {
+        strings: typedStrings,
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 2000
+      });
+    }
+  }, []);
+
   return (
     <header className={styles.hero}>
       <div className={styles.textSide}>
-        <h1>Designer.</h1>
-        <h1>Developer.</h1>
-        <h1>Programmer.</h1>
-        <h1>Photographer.</h1>
+        <h1>
+          <span className={styles.name}>Raveen Prabhu</span>
+          <span className="typed" data-typed-items="I'm a Developer,I'm a Designer,I'm an Entrepreneur,I'm a Learner"></span>
+        </h1>
       </div>
       <div className={styles.imageSide}>
         <StaticImage
           alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
-          src="../../images/example.png"
+          src="../../images/profile.png"
         />
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
