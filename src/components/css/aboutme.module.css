@@ -1,6 +1,9 @@
-/* AboutMe.module.css */
+.mainContainer {
+  width: 100%; /* Make the container full-width with 16px less */
+  background-color: #f8f8f8;
+}
 
-.container {
+.aboutMeContainer {
   display: flex;
   align-items: center;
   justify-content: center;

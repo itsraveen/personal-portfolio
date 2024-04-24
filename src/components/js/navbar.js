@@ -5,7 +5,7 @@ import * as styles from '../css/navbar.module.css';
 
 const Navbar = () => {
   return (
-    <nav className={styles.navbar}>
+    <nav id="navbar" className={styles.navbar}>
       <div className={styles.navbarLeft}>
         <span className={styles.navbarBrand}>Raveen Prabhu</span>
       </div>
