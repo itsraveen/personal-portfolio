@@ -13,6 +13,10 @@ const FooterBar = () => {
           <a href="https://github.com/itsraveen" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
           <a href="mailto:raveenprabhu99@gmail.com"><FaEnvelope /></a>
         </div>
+        <p className={styles.builtby}>
+          Built with React & Gatsby.
+          Icons by <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer"> Icons8</a>
+        </p>
       </div>
     </div>
   );

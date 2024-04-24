@@ -1,40 +1,61 @@
 .footerBar {
-    background-color: #4a2f2f;
-    color: white;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    padding: 20px;
-    max-height: 30vh; /* Set maximum height to 30% of viewport height */
-    overflow-y: auto; /* Add scrollbar if content exceeds maximum height */
-  }
+  background-color: #4a2f2f;
+  color: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding: 20px;
+  max-height: 30vh; /* Set maximum height to 30% of viewport height */
+  overflow-y: auto; /* Add scrollbar if content exceeds maximum height */
+}
 
 .footerBar .content h1 {
-  font-size: 2em;
+font-size: 2em;
 }
 
 .footerBar .content p {
-  font-size: 1.2em;
-  margin: 10px 0;
+font-size: 1.2em;
+margin: 10px 0;
 }
 
 .footerBar .icons {
-  font-size: 1.5em;
-  margin: 20px 0;
+font-size: 1.5em;
+margin: 20px 0;
 }
 
 .footerBar .icons a {
-  color: white;
-  margin: 0 10px;
+color: white;
+margin: 0 10px;
 }
 
 .footerBar .icons a:hover {
-  color: #ccc;
+color: #ccc;
 }
 
 .footerBar footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  font-size: 0.8em;
-  padding: 10px;
+position: absolute;
+bottom: 0;
+width: 100%;
+font-size: 0.8em;
+padding: 10px;
+}
+
+
+.builtby {
+font-size: .75rem !important; /* Smaller font size, you can adjust as necessary */
+padding-top: 50px; /* Adjust as needed */
+color: #7B6F71;
+display: flex; /* Use flexbox to align items inline */
+justify-content: center; /* Center content horizontally */
+align-items: center; /* Center items vertically */
+flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.builtby a {
+color: #7B6F71;
+margin-left: 4px;
+text-decoration: underline;
+}
+
+.builtby a:hover {
+color: #ccc;
 }
