@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40vh; /* Top and bottom margin */
 }
   
   
@@ -14,19 +13,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 40%; /* Adjust the percentage as needed */
-  max-height: 60vh; /* Adjust the viewport height percentage as needed */
-  overflow: hidden; /* Ensure the content doesn't overflow */
-  position: relative; /* Position the container relative to its normal position */
-  transform: translateY(20%) translateX(10%); /* Adjust the percentages as needed */
-  margin-right: 20vw;
-  
+  position: relative;
+  max-width: 30vw;
+  margin: 10vw 5vw 20vh 15vw;
 }
   
+
 .textContainer {
   flex: 1;
   font-family: "Open Sans", sans-serif;
-  padding-right: 20vw;
+  padding-right: 10vw;
 }
 
 .title {
