@@ -1,0 +1,66 @@
+/* experiencecard.module.css */
+.cardContainer {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Padding inside the card */
+  margin-bottom: 20px; /* Space between cards */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.cardTitle {
+  font-size: 20px;
+  color: #333333; /* Darker text for better readability */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.cardDuration {
+  font-size: 16px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  font-size: 16px; /* Ensuring the icon is not too large */
+}
+
+.cardDescription {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 1rem; /* More space before sub-description */
+}
+
+.cardSubDescription {
+  font-weight: 300;
+  color: #524748;
+  margin-bottom: 1rem;
+}
+
+.responsibilities {
+  margin-top: 1rem;
+}
+
+.responsibilitiesHeader {
+  font-weight: 500;
+  color: #3E0E12;
+  margin-bottom: 0.5rem;
+}
+
+.responsibilitiesList {
+  list-style: square inside;
+  font-weight: 300;
+}
+
+.responsibilityItem {
+  margin-bottom: 0.5rem;
+}
+
+/* Hover effect for the card */
+.cardContainer:hover {
+  transform: translateY(-5px); /* Lift the card up slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for lifted effect */
+}

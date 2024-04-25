@@ -1,0 +1,61 @@
+/* experience.module.css */
+
+.container {
+  display: flex;
+  min-height: 100vh; /* Ensures the minimum height of the whole container */
+}
+
+.heading {
+  text-align: left; /* Align text to the left */
+  font-size: 32px; /* Large font size */
+  color: #333333; /* Dark grey color */
+  margin: 20px 0; /* Margin top and bottom for spacing */
+  padding: 0 0; /* Padding on the sides */
+  font-weight: bold; /* Bold font weight */
+}
+
+.sidebar {
+  width: 250px; /* Fixed sidebar width */
+  position: fixed;
+  margin-left: 3%;
+  top: 50%; /* Center sidebar vertically */
+  transform: translateY(-50%); /* Shift sidebar up by half its height to truly center */
+  height: auto; /* Height based on content */
+  overflow-y: auto; /* Allows scrolling on the Y-axis if content is too long */
+  background-color: transparent; /* Transparent background */
+  padding: 20px; /* Padding around the content in the sidebar */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for better visibility */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+.content {
+  margin-left: 20%; /* Offset content to the right, same as sidebar width */
+  margin-top: 4%;
+  overflow-y: auto; /* Scrollable content area */
+  width: calc(100% - 250px); /* Remaining width */
+  padding: 20px; /* Padding around the content */
+  background-color: #ffffff; /* White background for the content area */
+}
+
+.experienceSection {
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.title {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  color: #666666;
+}
+
+.duration {
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 10px;
+}
