@@ -2,7 +2,7 @@ import * as React from 'react'
 import SideMenu from "./experiencesidemenu"
 import ExperienceSection from './experiencesection';
 import * as styles from '../css/experience.module.css';
-import { workExperiences, educations, leadershipExperiences } from '../../data/experience-data'; // Adjust the path as needed
+import { workExperiences, educations, leadershipExperiences } from '../../data/experience-data';
 
 const Experience = () => {
   return (
@@ -12,9 +12,15 @@ const Experience = () => {
       </div>
       <div className={styles.content}>
         <h1 className={styles.heading}>Experiences</h1>
-        <ExperienceSection title="Work Experience" experiences={workExperiences} />
-        <ExperienceSection title="Education" experiences={educations} />
-        <ExperienceSection title="Leadership Experience" experiences={leadershipExperiences} />
+        <div id="work">
+          <ExperienceSection title="Work Experience" experiences={workExperiences} />
+        </div>
+        <div id="education">
+          <ExperienceSection title="Education" experiences={educations} />
+        </div>
+        <div id="leadership">
+          <ExperienceSection title="Leadership Experience" experiences={leadershipExperiences} />
+        </div>
       </div>
     </div>
   )
