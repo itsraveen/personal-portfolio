@@ -6,6 +6,7 @@
   padding: 20px; /* Padding inside the card */
   margin-bottom: 20px; /* Space between cards */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+  max-width: 90%; /* Maximum width */
 }
 
 .cardTitle {

@@ -1,35 +1,39 @@
 export const workExperiences = [
     {
       id: 1,
-      title: "Software Developer",
-      duration: "2021 - Present",
-      description: "Developing cool stuff at Company XYZ."
-    },
-    {
-      id: 2,
-      title: "Product Management Intern",
-      duration: "Aug 2022 - Jul 2023",
-      description: "Silverstein Properties (InspireLabs) - New York City",
-      subDescription: "Start-up started by a Real Estate Investment Firm, building AI-powered hospitality solutions.",
+      title: "Solution Developer",
+      duration: "Aug 2022 - Present",
+      description: "Eye-Share Singapore Pte. Ltd",
+      subDescription: "Norwegian tech company building solutions for digitalization and management of documents, with a particular focus on invoice management.",
       responsibilities: [
-        "Directed product strategies and coordinated with engineering and designing teams to develop the Inspire App, amassing a user base of 10,000",
-        "Conducted competitor’s and market analysis and research for sales materials used by external sales team",
-        "Worked with Sales and Marketing Teams to analyze and define potential user segments for marketing campaigns, employing go-to-market strategies driving app sign up rates by 60% and daily app traffic by 35%",
-        "Liaised with external stakeholders and evaluated technical documentation and data requirements with internal teams to allow seamless integration with third-party software for the mobile application",
-        "Defined and execute a product roadmap based off company’s OKRs and customer’s feedback. Manage product backlog and prioritize user stories for company’s products based on business value and user needs",
-        "Provided a framework for app documentation, including product requirements, specifications, and user manuals"
+        "Leveraged C# & .NET to implement advanced threading techniques, ensuring efficient management of shared resources to handle any concurrency issues. Optimized performance by 40%.",
+        "Designed API integrations, facilitating seamless real-time communication and data exchange between our application and external systems such as SAP & Oracle. Leveraged C#, MongoDB & Azure for cloud deployment.",
+        "Led the successful migration of 4 servers & databases and the implementation of a new server for an on-premise customer with minimal downtime and preserved data integrity for 3 large clients, each with over 3000 users.",
       ]
     },
     // More work experiences...
   ];
   
   export const educations = [
-    { id: 1, title: "BSc Computer Science", duration: "2017 - 2021", description: "Studied at University ABC." },
+    { 
+      id: 1, 
+      title: "Bachelor of Computing, Computer Science (Hons)", 
+      duration: "2020 - 2024", 
+      description: "National University of Singapore" 
+    },
     // More education entries...
   ];
   
   export const leadershipExperiences = [
-    { id: 1, title: "Club President", duration: "2019 - 2020", description: "Led a student club at University." },
+    { id: 1, 
+      title: "President", 
+      duration: "Aug 2021 - Sep 2022", 
+      description: "Led a student club at School of Computing (NUS).",
+      responsibilities: [
+        "Led a team of 200 members in organizing over 40 events for students of the NUS School of Computing (SoC).",
+        "Ensured the well-being of over 4,500 students by overseeing and supporting student life in the NUS SoC and maintaining a cordial relationship with the Dean’s Office.",
+      ]
+    },
     // More leadership experiences...
   ];
   
