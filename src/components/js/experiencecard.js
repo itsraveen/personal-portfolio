@@ -1,21 +1,25 @@
 import React, { useState } from 'react';
-import ExperiencePopUpCard from './ExperiencePopUpCard'; // Updated import
+import ExperiencePopUpCard from './ExperiencePopUpCard';
 import * as styles from '../css/experiencecard.module.css';
 
-function ExperienceCard({ title, duration, description, subDescription, responsibilities }) {
+function ExperienceCard({ title, duration, description, subDescription, responsibilities, extraDetails, images, achievements }) {
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
 
   const openPopUp = () => setIsPopUpOpen(true);
   const closePopUp = () => setIsPopUpOpen(false);
 
-  // Structure the data object
+  // In ExperienceCard component
   const data = {
     title,
     duration,
     description,
     subDescription,
-    responsibilities
+    responsibilities,
+    extraDetails, 
+    images,
+    achievements
   };
+
 
   return (
     <div>
@@ -29,23 +33,7 @@ function ExperienceCard({ title, duration, description, subDescription, responsi
           <div className={styles.cardSubDescription}>{subDescription}</div>
         )}
       </div>
-      {/* Pass the structured data object */}
-      <ExperiencePopUpCard isOpen={isPopUpOpen} close={closePopUp} data={data}>
-        <h2>{title}</h2>
-        <p>{duration}</p>
-        <p>{description}</p>
-        {subDescription && <p>{subDescription}</p>}
-        {responsibilities && (
-          <div>
-            <h3>Responsibilities:</h3>
-            <ul>
-              {responsibilities.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </ExperiencePopUpCard>
+      <ExperiencePopUpCard isOpen={isPopUpOpen} close={closePopUp} data={data} />
     </div>
   );
 }

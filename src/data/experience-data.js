@@ -10,19 +10,18 @@ export const workExperiences = [
       "Designed API integrations, facilitating seamless real-time communication and data exchange between our application and external systems such as SAP & Oracle. Leveraged C#, MongoDB & Azure for cloud deployment.",
       "Led the successful migration of 4 servers & databases and the implementation of a new server for an on-premise customer with minimal downtime and preserved data integrity for 3 large clients, each with over 3000 users.",
     ],
-    detailedInfo: {
-      extraDetails: [
-        "Participated in weekly Agile sprint meetings to ensure project milestones were met on time.",
-        "Provided technical training to new team members, enhancing team capabilities and productivity."
-      ],
-      images: [
-        "/images/profile.png",
-        "/images/profile2.png",
-      ],
-      achievements: [
-        "Awarded 'Best Innovator' for Q1 2023 for exceptional performance and contributions to project success."
-      ]
-    }
+    extraDetails: [
+      "Participated in weekly Agile sprint meetings to ensure project milestones were met on time.",
+      "Provided technical training to new team members, enhancing team capabilities and productivity."
+    ],
+    images: [
+      "/images/profile.png",
+      "/images/profile2.png",
+    ],
+    achievements: [
+      "Awarded 'Best Innovator' for Q1 2023 for exceptional performance and contributions to project success."
+    ]
+    
   },
   // More work experiences...
 ];

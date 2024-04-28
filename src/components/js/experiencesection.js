@@ -13,6 +13,9 @@ function ExperienceSection({ title, experiences }) {
           description={exp.description}
           subDescription={exp.subDescription}
           responsibilities={exp.responsibilities}
+          extraDetails={exp.extraDetails}
+          images={exp.images}
+          achievements={exp.achievements}
         />
       ))}
     </div>

@@ -5,6 +5,7 @@ import * as styles from '../css/experience.module.css';
 import { workExperiences, educations, leadershipExperiences } from '../../data/experience-data';
 
 const Experience = () => {
+  console.log(workExperiences); // Add this line for debugging
   return (
     <div className={styles.container}>
       <div className={styles.sidebar}>
