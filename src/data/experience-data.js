@@ -1,18 +1,32 @@
 export const workExperiences = [
-    {
-      id: 1,
-      title: "Solution Developer",
-      duration: "Aug 2022 - Present",
-      description: "Eye-Share Singapore Pte. Ltd",
-      subDescription: "Norwegian tech company building solutions for digitalization and management of documents, with a particular focus on invoice management.",
-      responsibilities: [
-        "Leveraged C# & .NET to implement advanced threading techniques, ensuring efficient management of shared resources to handle any concurrency issues. Optimized performance by 40%.",
-        "Designed API integrations, facilitating seamless real-time communication and data exchange between our application and external systems such as SAP & Oracle. Leveraged C#, MongoDB & Azure for cloud deployment.",
-        "Led the successful migration of 4 servers & databases and the implementation of a new server for an on-premise customer with minimal downtime and preserved data integrity for 3 large clients, each with over 3000 users.",
+  {
+    id: 1,
+    title: "Solution Developer",
+    duration: "Aug 2022 - Present",
+    description: "Eye-Share Singapore Pte. Ltd",
+    subDescription: "Norwegian tech company building solutions for digitalization and management of documents, with a particular focus on invoice management.",
+    responsibilities: [
+      "Leveraged C# & .NET to implement advanced threading techniques, ensuring efficient management of shared resources to handle any concurrency issues. Optimized performance by 40%.",
+      "Designed API integrations, facilitating seamless real-time communication and data exchange between our application and external systems such as SAP & Oracle. Leveraged C#, MongoDB & Azure for cloud deployment.",
+      "Led the successful migration of 4 servers & databases and the implementation of a new server for an on-premise customer with minimal downtime and preserved data integrity for 3 large clients, each with over 3000 users.",
+    ],
+    detailedInfo: {
+      extraDetails: [
+        "Participated in weekly Agile sprint meetings to ensure project milestones were met on time.",
+        "Provided technical training to new team members, enhancing team capabilities and productivity."
+      ],
+      images: [
+        "/images/profile.png",
+        "/images/profile2.png",
+      ],
+      achievements: [
+        "Awarded 'Best Innovator' for Q1 2023 for exceptional performance and contributions to project success."
       ]
-    },
-    // More work experiences...
-  ];
+    }
+  },
+  // More work experiences...
+];
+
   
   export const educations = [
     { 

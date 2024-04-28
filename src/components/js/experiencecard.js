@@ -8,6 +8,15 @@ function ExperienceCard({ title, duration, description, subDescription, responsi
   const openPopUp = () => setIsPopUpOpen(true);
   const closePopUp = () => setIsPopUpOpen(false);
 
+  // Structure the data object
+  const data = {
+    title,
+    duration,
+    description,
+    subDescription,
+    responsibilities
+  };
+
   return (
     <div>
       <div className={styles.cardContainer} onClick={openPopUp}>
@@ -20,7 +29,8 @@ function ExperienceCard({ title, duration, description, subDescription, responsi
           <div className={styles.cardSubDescription}>{subDescription}</div>
         )}
       </div>
-      <ExperiencePopUpCard isOpen={isPopUpOpen} close={closePopUp}>
+      {/* Pass the structured data object */}
+      <ExperiencePopUpCard isOpen={isPopUpOpen} close={closePopUp} data={data}>
         <h2>{title}</h2>
         <p>{duration}</p>
         <p>{description}</p>
