@@ -65,3 +65,13 @@
   transform: translateY(-5px); /* Lift the card up slightly */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for lifted effect */
 }
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between; /* This separates the title and duration */
+  align-items: center;
+}
+
+.rightAligned {
+  margin-left: auto; /* This pushes the duration to the right */
+}

@@ -3,8 +3,8 @@ export const workExperiences = [
     id: 1,
     title: "Solution Developer",
     duration: "Aug 2022 - Present",
-    description: "Eye-Share Singapore Pte. Ltd",
-    subDescription: "Norwegian tech company building solutions for digitalization and management of documents, with a particular focus on invoice management.",
+    place: "Eye-Share Singapore Pte. Ltd",
+    subDescription: "Norwegian tech company building solutions for digitalization and management of documents, with a particular focus on invoice management. Provided 1st & 2nd level customer support and built custom solutions for clients in Asia & Europe.",
     responsibilities: [
       "Leveraged C# & .NET to implement advanced threading techniques, ensuring efficient management of shared resources to handle any concurrency issues. Optimized performance by 40%.",
       "Designed API integrations, facilitating seamless real-time communication and data exchange between our application and external systems such as SAP & Oracle. Leveraged C#, MongoDB & Azure for cloud deployment.",
@@ -15,16 +15,14 @@ export const workExperiences = [
       "Provided technical training to new team members, enhancing team capabilities and productivity."
     ],
     images: [
-      "/images/profile.png",
-      "/images/profile2.png",
+      { src: "/images/eye-share-pioneer-memebers.png", caption: "Team Hike Up Preikestolen (Stavanger, Norway)" },
+      { src: "/images/eye-share-trip.png", caption: "Pioneering members of Eye-share Singapore" },
     ],
-    achievements: [
-      "Awarded 'Best Innovator' for Q1 2023 for exceptional performance and contributions to project success."
-    ]
-    
+    achievements: []
   },
   // More work experiences...
 ];
+
 
   
   export const educations = [
@@ -32,7 +30,7 @@ export const workExperiences = [
       id: 1, 
       title: "Bachelor of Computing, Computer Science (Hons)", 
       duration: "2020 - 2024", 
-      description: "National University of Singapore" 
+      place: "National University of Singapore" 
     },
     // More education entries...
   ];
@@ -41,11 +39,16 @@ export const workExperiences = [
     { id: 1, 
       title: "President", 
       duration: "Aug 2021 - Sep 2022", 
-      description: "Led a student club at School of Computing (NUS).",
+      place: "NUS Students' Computing Club (School of Computing)",
+      subDescription: "Led a student club at NUS with over 300 members.",
       responsibilities: [
         "Led a team of 200 members in organizing over 40 events for students of the NUS School of Computing (SoC).",
         "Ensured the well-being of over 4,500 students by overseeing and supporting student life in the NUS SoC and maintaining a cordial relationship with the Dean’s Office.",
-      ]
+      ],
+      images: [
+        { src: "/images/comclub-meeting.png", caption: "1st Milestone meeting with the Management Committee" },
+        { src: "/images/cc-booth.jpg", caption: "Computing Club Booth with committee members" },
+      ],
     },
     // More leadership experiences...
   ];

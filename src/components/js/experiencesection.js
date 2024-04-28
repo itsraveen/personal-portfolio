@@ -10,7 +10,7 @@ function ExperienceSection({ title, experiences }) {
           key={exp.id} 
           title={exp.title} 
           duration={exp.duration} 
-          description={exp.description}
+          place={exp.place}
           subDescription={exp.subDescription}
           responsibilities={exp.responsibilities}
           extraDetails={exp.extraDetails}

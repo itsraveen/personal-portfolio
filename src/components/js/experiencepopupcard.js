@@ -11,7 +11,7 @@ function ExperiencePopUpCard({ isOpen, close, data }) {
         <button className={styles.closeButton} onClick={close}>&times;</button>
         <h2>{data.title}</h2>
         <p>{data.duration}</p>
-        <p>{data.description}</p>
+        <p>{data.place}</p>
         <p>{data.subDescription}</p>
         {data.responsibilities && (
           <div>
@@ -23,7 +23,6 @@ function ExperiencePopUpCard({ isOpen, close, data }) {
             </ul>
           </div>
         )}
-        {/* // In ExperiencePopUpCard component */}
         {data.extraDetails && (
           <div>
             <h3>More Details:</h3>
@@ -44,9 +43,14 @@ function ExperiencePopUpCard({ isOpen, close, data }) {
             </ul>
           </div>
         )}
-        {data.images && data.images.map((image, index) => (
-          <img key={index} src={image} alt={`${data.title} related`} style={{ width: '100%', height: 'auto', marginBottom: '10px' }}/>
-        ))}
+        <div className={styles.photoContainer}>
+          {data.images && data.images.map((image, index) => (
+            <div key={index} className={styles.photoWrapper}>
+              <img src={image.src} alt={`${data.title} related`} className={styles.photo} />
+              <p className={styles.caption}>{image.caption}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>,
     document.body

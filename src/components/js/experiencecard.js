@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import classNames from 'classnames';
 import ExperiencePopUpCard from './ExperiencePopUpCard';
 import * as styles from '../css/experiencecard.module.css';
 
-function ExperienceCard({ title, duration, description, subDescription, responsibilities, extraDetails, images, achievements }) {
+function ExperienceCard({ title, duration, place, subDescription, responsibilities, extraDetails, images, achievements }) {
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
 
   const openPopUp = () => setIsPopUpOpen(true);
@@ -12,7 +13,7 @@ function ExperienceCard({ title, duration, description, subDescription, responsi
   const data = {
     title,
     duration,
-    description,
+    place,
     subDescription,
     responsibilities,
     extraDetails, 
@@ -24,11 +25,11 @@ function ExperienceCard({ title, duration, description, subDescription, responsi
   return (
     <div>
       <div className={styles.cardContainer} onClick={openPopUp}>
-        <h3 className={styles.cardTitle}>{title}</h3>
-        <div className={styles.cardDuration}>
-          <i className={`bx bx-calendar-alt ${styles.icon}`}></i> {duration}
+        <div className={styles.cardHeader}>
+          <h3 className={styles.cardTitle}>{title}</h3>
+          <div className={classNames(styles.cardDuration, styles.rightAligned)}>{duration}</div>
         </div>
-        <div className={styles.cardDescription}>{description}</div>
+        <div className={styles.cardDescription}>{place}</div>
         {subDescription && (
           <div className={styles.cardSubDescription}>{subDescription}</div>
         )}

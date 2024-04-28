@@ -2,7 +2,7 @@ import * as React from "react"
 
 import Hero from '../components/js/hero';
 import Navbar from '../components/js/navbar';
-import FooterBar from "../components/js/footerbar"
+import FooterBar from "../components/js/footerbar";
 
 const IndexPage = () => {
   return (

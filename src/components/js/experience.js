@@ -8,9 +8,9 @@ const Experience = () => {
   console.log(workExperiences); // Add this line for debugging
   return (
     <div className={styles.container}>
-      <div className={styles.sidebar}>
+      {/* <div className={styles.sidebar}>
         <SideMenu />
-      </div>
+      </div> */}
       <div className={styles.content}>
         <h1 className={styles.heading}>Experiences</h1>
         <div id="work">
@@ -26,5 +26,7 @@ const Experience = () => {
     </div>
   )
 }
+
+export const Head = () => <title>Experience</title>
 
 export default Experience;
