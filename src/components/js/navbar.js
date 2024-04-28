@@ -20,7 +20,10 @@ const Navbar = () => {
             <Link to="/about" className={styles.navbarLink}>About</Link>
           </li>
           <li className={styles.navbarItem}>
-            <Link to="/experience" className={styles.navbarLink}>Experience</Link>
+            <Link to="/experience" className={styles.navbarLink}>Experiences</Link>
+          </li>
+          <li className={styles.navbarItem}>
+            <Link to="/projects" className={styles.navbarLink}>Projects</Link>
           </li>
         </ul>
       </div>
