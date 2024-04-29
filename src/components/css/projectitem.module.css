@@ -1,15 +1,15 @@
 .portfolioItem {
-  width: 400px; /* or any other size */
-  height: 400px;
-  margin: 0 15px 30px 15px;
+  /* Removed the fixed height and set it using padding-top to maintain the aspect ratio */
+  width: calc(33% - 30px); /* 3 items per row, accounting for the gap */
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: all 0.3s ease-in-out;
-  
-  align-items: center; /* center vertically */
-  justify-content: center; /* center horizontally */
+  flex: 0 0 calc(30% - 60px); /* Smaller flex-basis and larger gap */
+  margin: 30px; /* This will be the gap between the items */
+  position: relative;
+  box-sizing: border-box; /* This ensures the padding is included in the width and height */
 }
 
 .portfolioWrap {
