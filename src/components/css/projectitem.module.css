@@ -1,69 +1,67 @@
 .portfolioItem {
-    width: 250px; /* or any other size */
-    height: 250px;
-    margin: 0 15px 30px 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: all 0.3s ease-in-out;
-    display: flex; /* to ensure the children (like images) center correctly */
-    align-items: center; /* center vertically */
-    justify-content: center; /* center horizontally */
-  }
+  width: 400px; /* or any other size */
+  height: 400px;
+  margin: 0 15px 30px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
   
-  .portfolioWrap {
-    position: relative;
-    width: 100%; /* Ensures the wrapper fills the container */
-    height: 100%; /* Adjust this if you want a specific aspect ratio */
-    overflow: hidden;
-  }
-  
-  .imgFluid {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This will cover the area without stretching */
-  }
-  
-  
-  .projectDescription {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7); /* Translucent overlay */
-    color: white; /* Text color */
-    transform: translateY(100%);
-    transition: transform 0.5s, opacity 0.5s;
-    padding: 20px; /* Padding inside the description */
-    box-sizing: border-box; /* Ensures padding doesn't add to width */
-  }
-  
-  .portfolioItem:hover .projectDescription {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  
-  .projectTitle, .projectSubTitle, .projectPara {
-    margin-bottom: 10px;
-  }
-  
-  .projectLinks {
-    display: flex;
-    justify-content: start;
-  }
-  
-  .projectLink {
-    font-size: 24px;
-    margin-right: 16px;
-    color: #fff;
-    background-color: #149ddd;
-    padding: 10px;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-  }
-  
-  .projectLink:hover {
-    background-color: #0b7db7;
-  }
-  
+  align-items: center; /* center vertically */
+  justify-content: center; /* center horizontally */
+}
+
+.portfolioWrap {
+  position: relative;
+  width: 100%; /* Ensures the wrapper fills the container */
+  height: 100%; /* Adjust this if you want a specific aspect ratio */
+  overflow: hidden;
+}
+
+.imgFluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will cover the area without stretching */
+}
+
+.projectDescription {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); /* Translucent overlay */
+  color: white; /* Text color */
+  transform: translateY(100%);
+  transition: transform 0.5s, opacity 0.5s;
+  padding: 20px; /* Padding inside the description */
+  box-sizing: border-box; /* Ensures padding doesn't add to width */
+}
+
+.portfolioItem:hover .projectDescription {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.projectTitle, .projectSubTitle, .projectPara {
+  margin-bottom: 10px;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: start;
+}
+
+.projectLink {
+  font-size: 24px;
+  margin-right: 16px;
+  color: #fff;
+  background-color: #149ddd;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.projectLink:hover {
+  background-color: #0b7db7;
+}

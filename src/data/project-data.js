@@ -13,14 +13,83 @@ const projectData = [
         id: 2,
         title: "HOwGO",
         category: "app",
-        image: "images/projects/NUSHOwGO.png",
+        image: "/images/NUSHOwGO.png",
         technologies: "Flutter, Firebase",
         description: "HOwGO, aims to facilitate ease of navigation across NUS campus using campus street view while providing relevant information regarding the facilities. Additionally, however also aims to provide users with possible nearby study areas that they could visit in between lessons.",
         github: "https://github.com/itsraveen/AY20-21_HOwGO_Orbital",
         website: null // No website provided
     },
-    // Add more projects here
-  ];
+    {
+        id: 3,
+        title: "Habitouch",
+        category: "app",
+        image: "/images/habitouch.png",
+        technologies: "Flutter, Firebase",
+        description: "Habitouch is a one stop application that connects non-profit organisations with interested volunteers. Habitouch provides a unified platform that allows these organisations to promote their projects to willing contributors and volunteers through relevant information and engaging videos. <br> Google Students' Developer Club Hack For Good Finalist.",
+        github: "https://github.com/itsraveen/hack-for-good",
+        website: null // No website provided
+    },
+    {
+        id: 4,
+        title: "HomeQuest",
+        category: "uiux",
+        image: "/images/HomeQuest.png",
+        technologies: "Figma, UiUx Design",
+        description: "HomeQuest, is an Figma prototype application that provides location rankings for people looking to rent an appartment/room both long term. It is carefully designed with the users in mind, allowing them to find appartments based on their needs, and also liaise with the owners.",
+        github: null,
+        website: "https://bit.ly/raveen-homequest" // No website provided
+    },
+    {
+        id: 5,
+        title: "FlutTile",
+        category: "app",
+        image: "/images/FlutTile.png",
+        technologies: "Flutter, Firebase",
+        description: "FlutTile is a simple and straightforward puzzle game, while having varying difficulty levels and different game modes. This Flutter mobile game was developed with the use of some Flutter Animations as part of the Flutter Puzzle Hack.",
+        github: "https://github.com/itsraveen/Flutter_Puzzle_Hack",
+        website: null // No website provided
+    },
+    {
+        id: 6,
+        title: "NUwhereS",
+        category: "uiux",
+        image: "/images/NUwhereS.png",
+        technologies: "Figma, UiUx Design",
+        description: "NUwhereS is a mobile application that provides accurate navigation services so that NUS students can travel around NUS with ease and explore the campus venues and facilites. Other than that, NUwhereS also acts as a social media platform for students to share about the various facilities in NUS.",
+        github: null,
+        website: "https://nuwherescs3240.wordpress.com" // No website provided
+    },
+    {
+        id: 7,
+        title: "Optimizing Home Layout with CNNs",
+        category: "others",
+        image: "/images/3244ml.png",
+        technologies: "Machine Learning Research Paper",
+        description: "Small apartments and rooms are common in Singapore due to its limited land. To optimize the home layout, we trained a machine learning model with CNNs to predict the ideal location to position furniture for a given 2D floor plan. Our model allows users to visualize potential optimized layout of their homes before they commit to furnishing.",
+        github: null,
+        website: "https://drive.google.com/file/d/1lDaoAyG5urdbkJPfs_csqEFm2G4JfZ_h/view?usp=sharing" // No website provided
+    },
+    {
+        id: 8,
+        title: "AlFresco",
+        category: "app",
+        image: "/images/alfresco.png",
+        technologies: "Web Scraping, Sentiment Analysis",
+        description: "Inspired by all the ruined outings we had, my team and I made a Telegram Bot that one can use before heading out. It gives timely updates on the current weather and uses web scraping and sentiment analysis algorithms to provide an overall review of the places one intends to head to.",
+        github: null,
+        website: "https://drive.google.com/file/d/1lDaoAyG5urdbkJPfs_csqEFm2G4JfZ_h/view?usp=sharing" // No website provided
+    },
+    {
+        id: 9,
+        title: "CheckMed",
+        category: "others",
+        image: "/images/checkmed.png",
+        technologies: "Start-up Pitch Deck",
+        description: "CheckMed is a MedTech Startup which uses Artificial Intelligence to provide personalized guidance and ongoing support to better plan and manage Medical Screenings to increase the uptake of medical screenings in Singapore.",
+        github: null,
+        website: "https://docs.google.com/presentation/d/12pTUQCoou2asPTnm_92mHXmIL7d9b47M/edit?usp=sharing&ouid=110786964280197235786&rtpof=true&sd=true" // No website provided
+    },
+];
   
-  export default projectData;
+export default projectData;
   
