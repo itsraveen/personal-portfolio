@@ -1,16 +1,17 @@
 import * as React from "react"
 
+import Layout from '../components/js/layout';
 import Hero from '../components/js/hero';
 import Navbar from '../components/js/navbar';
 import FooterBar from "../components/js/footerbar";
 
 const IndexPage = () => {
   return (
-    <div>
+    <Layout pageTitle="Raveen Prabhu">
       <Navbar />
       <Hero />
       <FooterBar />
-    </div>
+    </Layout> 
   )
 }
 

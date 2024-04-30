@@ -4,7 +4,8 @@ import * as styles from '../css/experiencepopupcard.module.css';
 
 function ExperiencePopUpCard({ isOpen, close, data }) {
   if (!isOpen) return null;
-  console.log(data); // Add this line for debugging
+  console.log(data); // Debugging to check the data structure
+
   return ReactDOM.createPortal(
     <div className={styles.overlay}>
       <div className={styles.popupCard}>
@@ -44,12 +45,15 @@ function ExperiencePopUpCard({ isOpen, close, data }) {
           </div>
         )}
         <div className={styles.photoContainer}>
-          {data.images && data.images.map((image, index) => (
-            <div key={index} className={styles.photoWrapper}>
-              <img src={image.src} alt={`${data.title} related`} className={styles.photo} />
-              <p className={styles.caption}>{image.caption}</p>
-            </div>
-          ))}
+          {data.images && data.images.map((image, index) => {
+            const imagePath = require(`./../../images/${image.src}`); // Dynamically require the image
+            return (
+              <div key={index} className={styles.photoWrapper}>
+                <img src={imagePath.default || imagePath} alt={`${data.title} related`} className={styles.photo} />
+                <p className={styles.caption}>{image.caption}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>,

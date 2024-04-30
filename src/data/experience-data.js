@@ -15,8 +15,8 @@ export const workExperiences = [
       "Provided technical training to new team members, enhancing team capabilities and productivity."
     ],
     images: [
-      { src: "/images/eye-share-pioneer-memebers.png", caption: "Team Hike Up Preikestolen (Stavanger, Norway)" },
-      { src: "/images/eye-share-trip.png", caption: "Pioneering members of Eye-share Singapore" },
+      { src: "eye-share-pioneer-memebers.png", caption: "Team Hike Up Preikestolen (Stavanger, Norway)" },
+      { src: "eye-share-trip.png", caption: "Pioneering members of Eye-share Singapore" },
     ],
     achievements: []
   },

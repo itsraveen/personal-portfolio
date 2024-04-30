@@ -1,8 +1,7 @@
 import React from 'react';
-import * as styles from '../css/projectitem.module.css'; // CSS import
+import * as styles from '../css/projectitem.module.css';
 
 const ProjectItem = ({ project }) => {
-  // Dynamically require the image from the src/images/ directory
   const imagePath = require(`./../../images/${project.image}`);
 
   return (

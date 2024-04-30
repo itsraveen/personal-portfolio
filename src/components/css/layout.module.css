@@ -1,7 +1,7 @@
 .container {
-    /* margin-top: 60px;  */
-    /* padding-top: 16px;  */
-    width: 100% /* Make the container full-width with 16px less */
-    /* margin-left: 8px;  */
-  }
-  
+  width: 100%;
+}
+
+:global(body) {
+  font-family: 'Montserrat', sans-serif;
+}

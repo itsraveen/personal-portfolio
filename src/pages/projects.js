@@ -1,20 +1,18 @@
 import * as React from "react"
-import { Link } from "gatsby"
 
+import Layout from '../components/js/layout';
 import Navbar from '../components/js/navbar';
 import FooterBar from "../components/js/footerbar";
 import Projects from "../components/js/project";
 
 const ProjectsPage = () => {
     return (
-      <div>
+      <Layout pageTitle="Projects">
         <Navbar />
         <Projects />
         <FooterBar />
-      </div>
+      </Layout>
     )
-  }
+}
 
-export const Head = () => <title>Projects</title>
-
-export default ProjectsPage
+export default ProjectsPage;
