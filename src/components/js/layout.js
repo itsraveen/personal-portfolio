@@ -11,7 +11,7 @@ const Layout = ({ pageTitle, children }) => {
     <div>
       <div className={container}>
         <main>
-          <Hero />
+          
 
 
         </main>

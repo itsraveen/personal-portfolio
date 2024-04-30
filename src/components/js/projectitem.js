@@ -2,10 +2,13 @@ import React from 'react';
 import * as styles from '../css/projectitem.module.css'; // CSS import
 
 const ProjectItem = ({ project }) => {
+  // Dynamically require the image from the src/images/ directory
+  const imagePath = require(`./../../images/${project.image}`);
+
   return (
     <div className={styles.portfolioItem}>
       <div className={styles.portfolioWrap}>
-        <img src={project.image} alt={project.title} className={styles.imgFluid} />
+        <img src={imagePath.default || imagePath} alt={project.title} className={styles.imgFluid} />
         <div className={styles.projectDescription}>
           <div>
             <h3 className={styles.projectTitle}>{project.title}</h3>
