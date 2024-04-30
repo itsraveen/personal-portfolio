@@ -26,7 +26,7 @@
 }
 
 .projectDescription {
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  background: rgba(0, 0, 0, 0.75); /* Semi-transparent black */
   color: white;
   display: flex;
   flex-direction: column;
@@ -64,7 +64,6 @@
   font-size: 28px; /* Increase icon size for better clickability */
   margin-right: 16px;
   color: #fff;
-  background-color: #149ddd;
   padding: 12px; /* Slightly larger padding to accommodate bigger font/icon */
   border-radius: 50%;
   transition: background-color 0.3s;

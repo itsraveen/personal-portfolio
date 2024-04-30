@@ -1,5 +1,6 @@
 import React from 'react';
 import * as styles from '../css/projectitem.module.css';
+import { FaGithub, FaLink } from 'react-icons/fa'; // Importing FontAwesome icons
 
 const ProjectItem = ({ project }) => {
   const imagePath = require(`./../../images/${project.image}`);
@@ -17,12 +18,12 @@ const ProjectItem = ({ project }) => {
           <div className={styles.projectLinks}>
             {project.github && (
               <a href={project.github} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                <i className="bx bxl-github"></i>
+                <FaGithub /> {/* Using FontAwesome GitHub icon */}
               </a>
             )}
             {project.website && (
               <a href={project.website} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                <i className="bx bx-link"></i>
+                <FaLink /> {/* Using FontAwesome Link icon */}
               </a>
             )}
           </div>
