@@ -7,7 +7,6 @@
   background-color: rgba(27, 30, 32, 0.902);
   color: #fff;
   transition: all 0.5s;
-  font-family: "Open Sans", sans-serif;
   position: fixed; 
   top: 0px; /* Place the navbar at the top of the viewport */
   left: 8px; /* Align the navbar to the left */
