@@ -75,3 +75,8 @@
 .rightAligned {
   margin-left: auto; /* This pushes the duration to the right */
 }
+
+.icon {
+  margin-right: 8px;  /* Adjust right margin for spacing between icon and text */
+  vertical-align: middle;  /* Aligns icon vertically with the text */
+}

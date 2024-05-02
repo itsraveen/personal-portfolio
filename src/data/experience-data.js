@@ -15,8 +15,8 @@ export const workExperiences = [
       "Provided technical training to new team members, enhancing team capabilities and productivity."
     ],
     images: [
-      { src: "eye-share-pioneer-memebers.png", caption: "Team Hike Up Preikestolen (Stavanger, Norway)" },
-      { src: "eye-share-trip.png", caption: "Pioneering members of Eye-share Singapore" },
+      { src: "eye-share-pioneer-memebers.png", caption: "Pioneering members of Eye-share Singapore" },
+      { src: "eye-share-trip.png", caption: "Team Hike Up Preikestolen (Stavanger, Norway)" },
     ],
     achievements: []
   },
@@ -36,19 +36,22 @@ export const workExperiences = [
   ];
   
   export const leadershipExperiences = [
-    { id: 1, 
-      title: "President", 
-      duration: "Aug 2021 - Sep 2022", 
+    {
+      id: 1,
+      title: "President",
+      duration: "Aug 2021 - Sep 2022",
       place: "NUS Students' Computing Club (School of Computing)",
       subDescription: "Led a student club at NUS with over 300 members.",
       responsibilities: [
         "Led a team of 200 members in organizing over 40 events for students of the NUS School of Computing (SoC).",
         "Ensured the well-being of over 4,500 students by overseeing and supporting student life in the NUS SoC and maintaining a cordial relationship with the Dean’s Office.",
       ],
+      extraDetails: [ ],
       images: [
-        { src: "/images/comclub-meeting.png", caption: "1st Milestone meeting with the Management Committee" },
-        { src: "/images/cc-booth.jpg", caption: "Computing Club Booth with committee members" },
+        { src: "cc-booth.jpg", caption: "Computing Club Booth with committee members" },
+        { src: "comclub-meeting.png", caption: "1st Milestone meeting with the Management Committee" },
       ],
+      achievements: []
     },
     // More leadership experiences...
   ];
