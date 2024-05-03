@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import Layout from '../components/js/layout';
-import Hero from '../components/js/hero';
+import Hero from '../components/js/hero2';
 import Navbar from '../components/js/navbar';
 import FooterBar from "../components/js/footerbar";
 
