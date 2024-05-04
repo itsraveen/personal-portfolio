@@ -1,11 +1,46 @@
 .mainContainer {
   width: 100%; /* Make the container full-width with 16px less */
-  background-color: #f8f8f8;
+}
+
+.sectionTitle {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px; /* Keeps a minimal margin below the title */
+}
+
+.sectionTitle h2 {
+  font-size: 7em; /* Large font size for impact */
+  font-weight: bold; /* Bold font weight for visibility */
+  z-index: 2; /* Ensures the text is above any overlapping elements */
+  display: inline-block;
+  padding: 0 40px; /* Padding on the sides of the title */
+  position: relative;
+  margin-bottom: -40px; /* Pulls the subheading closer to the title */
+  top: 10px; /* Adjusted to move the background higher */
+}
+
+.sectionTitle p {
+  padding-top: 30px; /* Added padding to create space above the subheading */
+  font-size: 1.2em; /* Ensures the subheading is clearly readable */
+  margin: 0 auto; /* Centers the subheading and removes any default margin */
+  max-width: 80%; /* Controls the width to maintain readability */
+}
+
+.sectionTitle::before {
+  content: '';
+  position: absolute;
+  top: -40px; /* Adjusted to move the background higher */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Full width to align with the container */
+  height: 100%; /* Increased height to cover more area */
+  background: #f9f6f3; /* Beige background color */
+  z-index: 1; /* Keeps the background behind the text */
 }
 
 .aboutMeContainer {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Aligns items to the top of the container, removing center alignment */
   justify-content: center;
 }
   
@@ -18,13 +53,14 @@
   align-items: center;
   position: relative;
   max-width: 30vw;
-  margin: 10vw 5vw 20vh 15vw;
+  margin: 2vw 5vw 10vh 15vw;
 }
   
-
 .textContainer {
   flex: 1;
   padding-right: 10vw;
+  margin-top: 15vh; /* Pulls the text container up; adjust value as needed */
+  padding-top: 0; /* Reduce if there's unnecessary padding pushing content down */
 }
 
 .title {
@@ -33,20 +69,6 @@
 
 .description {
   margin-bottom: 20px;
-}
-
-.button {
-  margin-top: 20px;
-  padding: 10px 15px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #555;
 }
 
 .interests {
@@ -58,3 +80,31 @@
   margin-right: 20px;
   /* You can add more styles for the interest labels if needed */
 }
+
+.buttonContainer {
+  display: flex;
+  justify-content: center; /* Aligns the container center */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button {
+  margin: 0 10px; /* Space between the buttons */
+  padding: 12px 24px; /* Adequate padding for the buttons */
+  width: auto; /* Adjust width to content */
+  background-color: #6c757d; /* Updated color to match the button in the image */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: 500; /* Medium font weight for better visibility */
+  text-transform: uppercase; /* Makes text uppercase */
+  outline: none; /* Removes focus outline */
+}
+
+.button:hover {
+  background-color: #5a6268; /* Darker shade on hover */
+}
+
