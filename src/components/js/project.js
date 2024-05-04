@@ -15,7 +15,7 @@ const Projects = () => {
       <div className="container">
         <div className={styles.sectionTitle}>
           <h2>Projects</h2>
-          <p>These are some of the projects that I created during my modules, hackathons and my own free time.</p>
+          <p className={styles.subHeading}>These are some of the projects that I created during my modules, hackathons and my own free time.</p>
         </div>
         <div className={styles.filterContainer} data-aos="fade-up">
           <button onClick={() => setFilter('all')} className={filter === 'all' ? styles.filterActive : styles.filterButton}>All</button>
