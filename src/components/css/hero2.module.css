@@ -28,18 +28,10 @@
 
 .name:hover {
     width: 825px; /* Adjust width to fit "Hi! I'm Raveen Prabhu" */
-    background-color: #F0E68C; /* Highlight color on hover */
+    background-color: #D7E8D5; /* Highlight color on hover */
     animation: bounce 0.5s;
 }
 
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
 
 .roles {
     font-size: 2em;
@@ -51,8 +43,19 @@
     transition: background-color 0.3s;
 }
 
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
 .intro {
     font-size: 1.2em;
+    max-width: 800px;
 }
 
 .imageSide {
