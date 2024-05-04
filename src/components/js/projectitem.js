@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from '../css/projectitem.module.css';
-import { FaGithub, FaLink } from 'react-icons/fa'; // Importing FontAwesome icons
+import { FaGithub, FaLink, FaFile } from 'react-icons/fa'; // Importing FontAwesome icons
 
 const ProjectItem = ({ project }) => {
   const imagePath = require(`./../../images/${project.image}`);
@@ -24,6 +24,11 @@ const ProjectItem = ({ project }) => {
             {project.website && (
               <a href={project.website} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
                 <FaLink /> {/* Using FontAwesome Link icon */}
+              </a>
+            )}
+            {project.website2 && (
+              <a href={project.website2} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                <FaFile /> {/* Using FontAwesome File icon */}
               </a>
             )}
           </div>
