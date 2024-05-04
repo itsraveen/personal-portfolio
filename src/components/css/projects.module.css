@@ -9,17 +9,17 @@
 }
 
 .sectionTitle h2 {
-    font-size: 8em; /* Large font size for impact */
+    font-size: 7em; /* Large font size for impact */
     font-weight: bold; /* Bold font weight for visibility */
     z-index: 2; /* Ensures the text is above any overlapping elements */
     display: inline-block;
     padding: 0 40px; /* Padding on the sides of the title */
     position: relative;
-    margin-bottom: -50px; /* Pulls the subheading closer to the title */
+    margin-bottom: -40px; /* Pulls the subheading closer to the title */
 }
 
 .sectionTitle p {
-    padding-top: 50px; /* Added padding to create space above the subheading */
+    padding-top: 30px; /* Added padding to create space above the subheading */
     font-size: 1.2em; /* Ensures the subheading is clearly readable */
     margin: 0 auto; /* Centers the subheading and removes any default margin */
     max-width: 80%; /* Controls the width to maintain readability */
@@ -28,7 +28,7 @@
 .sectionTitle::before {
     content: '';
     position: absolute;
-    top: -90px; /* Adjusted to move the background higher */
+    top: -50px; /* Adjusted to move the background higher */
     left: 50%;
     transform: translateX(-50%);
     width: 100%; /* Full width to align with the container */
