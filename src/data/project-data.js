@@ -1,6 +1,16 @@
 const projectData = [
     {
         id: 1,
+        title: "Car Care",
+        category: "app",
+        image: "carcare2.png",
+        technologies: "React, Machine Learning & AWS",
+        description: "Using historical bidding data and analyzing economic and political factors through machine learning, CarCare provides users with the optimal bidding price",
+        github: "https://github.com/itsraveen/carcare",
+        website: "https://docs.google.com/document/d/1qxtsVngabveqGmdvxjh2HRt_FJtxhZKhmqdwThPKvWo/edit?usp=sharing"
+    },
+    {
+        id: 2,
         title: "tApp",
         category: "app",
         image: "tApp.png",
@@ -10,7 +20,7 @@ const projectData = [
         website: "https://ay2122s1-cs2103-w14-4.github.io/tp/"
     },
     {
-        id: 2,
+        id: 3,
         title: "HOwGO",
         category: "app",
         image: "NUSHOwGO.png",
@@ -20,7 +30,7 @@ const projectData = [
         website: null // No website provided
     },
     {
-        id: 3,
+        id: 4,
         title: "Habitouch",
         category: "app",
         image: "habitouch.png",
@@ -30,7 +40,7 @@ const projectData = [
         website: null // No website provided
     },
     {
-        id: 4,
+        id: 5,
         title: "HomeQuest",
         category: "uiux",
         image: "HomeQuest.png",
@@ -40,7 +50,7 @@ const projectData = [
         website: "https://bit.ly/raveen-homequest" // No website provided
     },
     {
-        id: 5,
+        id: 6,
         title: "FlutTile",
         category: "app",
         image: "FlutTile.png",
@@ -50,7 +60,7 @@ const projectData = [
         website: null // No website provided
     },
     {
-        id: 6,
+        id: 7,
         title: "NUwhereS",
         category: "uiux",
         image: "NUwhereS.png",
@@ -60,7 +70,7 @@ const projectData = [
         website: "https://nuwherescs3240.wordpress.com" // No website provided
     },
     {
-        id: 7,
+        id: 8,
         title: "Optimizing Home Layout with CNNs",
         category: "others",
         image: "3244ml.png",
@@ -70,7 +80,7 @@ const projectData = [
         website: "https://drive.google.com/file/d/1lDaoAyG5urdbkJPfs_csqEFm2G4JfZ_h/view?usp=sharing" // No website provided
     },
     {
-        id: 8,
+        id: 9,
         title: "AlFresco",
         category: "app",
         image: "alfresco.png",
@@ -80,7 +90,7 @@ const projectData = [
         website: "https://drive.google.com/file/d/1lDaoAyG5urdbkJPfs_csqEFm2G4JfZ_h/view?usp=sharing" // No website provided
     },
     {
-        id: 9,
+        id: 10,
         title: "CheckMed",
         category: "others",
         image: "checkmed.png",

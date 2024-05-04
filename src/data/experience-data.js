@@ -1,3 +1,5 @@
+import { GiAchievement } from "react-icons/gi";
+
 export const workExperiences = [
   {
     id: 1,
@@ -17,15 +19,14 @@ export const workExperiences = [
     images: [
       { src: "eye-share-pioneer-memebers.png", caption: "Pioneering members of Eye-share Singapore" },
       { src: "eye-share-trip.png", caption: "Team Hike Up Preikestolen (Stavanger, Norway)" },
-    ],
-    achievements: []
+    ]
   },
   // More work experiences...
 ];
 
 
   
-  export const educations = [
+export const educations = [
     { 
       id: 1, 
       title: "Bachelor of Computing, Computer Science (Hons)", 
@@ -33,7 +34,7 @@ export const workExperiences = [
       place: "National University of Singapore" 
     },
     // More education entries...
-  ];
+];
   
   export const leadershipExperiences = [
     {
@@ -46,12 +47,13 @@ export const workExperiences = [
         "Led a team of 200 members in organizing over 40 events for students of the NUS School of Computing (SoC).",
         "Ensured the well-being of over 4,500 students by overseeing and supporting student life in the NUS SoC and maintaining a cordial relationship with the Dean’s Office.",
       ],
-      extraDetails: [ ],
       images: [
         { src: "cc-booth.jpg", caption: "Computing Club Booth with committee members" },
-        { src: "comclub-meeting.png", caption: "1st Milestone meeting with the Management Committee" },
+        { src: "cc-meeting.jpg", caption: "1st Milestone meeting with the Management Committee members" },
       ],
-      achievements: []
+      achievements: [
+        "School of Computing clinched the champions title at the NUS Inter Faculty Games for the first time ever, in 20 years, under the leadership of the members of the 24th Management Committee!"
+      ]
     },
     // More leadership experiences...
   ];
