@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import * as styles from '../css/hero2.module.css';
 import { StaticImage } from "gatsby-plugin-image";
+import { withPrefix } from 'gatsby';
 
 const Hero = () => {
     useEffect(() => {
@@ -18,7 +19,7 @@ const Hero = () => {
     }, []);
 
     const openResume = () => {
-        window.open('/RaveenPrabhuCV.pdf', '_blank'); // Replace '/resume.pdf' with the actual path to your PDF document
+        window.open(withPrefix('/RaveenPrabhuCV.pdf'), '_blank');
     };
 
     const openLinkedIn = () => {
