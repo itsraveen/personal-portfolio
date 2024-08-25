@@ -3,10 +3,10 @@ import { GiAchievement } from "react-icons/gi";
 export const workExperiences = [
   {
     id: 1,
-    title: "Solution Developer",
+    title: "Software Engineer",
     duration: "Aug 2022 - Present",
     place: "Eye-Share Singapore Pte. Ltd",
-    subDescription: "Norwegian tech company building solutions for digitalization and management of documents, with a particular focus on invoice management. Provided 2nd and 3rd level technical customer support and built custom solutions for clients in Asia & Europe.",
+    subDescription: "Norwegian tech company building solutions for digitalization and management of documents, with a particular focus on invoice management. Implemented projects with custom solutions and integrations and provided 2nd and 3rd level technical customer support for clients in Asia & Europe.",
     responsibilities: [
       "Leveraged C# & .NET to implement advanced threading techniques, ensuring efficient management of shared resources to handle any concurrency issues. Optimized performance by 40%.",
       "Designed API integrations, facilitating seamless real-time communication and data exchange between our application and external systems such as SAP & Oracle. Leveraged C#, MongoDB & Azure for cloud deployment.",
@@ -29,7 +29,7 @@ export const workExperiences = [
 export const educations = [
     { 
       id: 1, 
-      title: "Bachelor of Computing, Computer Science (Hons)", 
+      title: "Bachelors of Computing (Honours) in Computer Science", 
       duration: "2020 - 2024", 
       place: "National University of Singapore",
       extraDetails: [
