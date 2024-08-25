@@ -33,8 +33,8 @@ const Hero = () => {
       </div>
       <div className={styles.imageSide}>
         <StaticImage
-          alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
-          src="../../images/profile.png"
+          alt="A picture of Raveen Prabhu"
+          src="../../images/profile3.png"
         />
       </div>
     </header>

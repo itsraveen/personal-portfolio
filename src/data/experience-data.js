@@ -37,8 +37,8 @@ export const educations = [
         "Teaching assistant for CS3240 Interaction Design (UIUX) Module",
       ],
       images: [
-        
-        
+        { src: "gradonstage.png", caption: "Commencement Day" },
+        { src: "grad.png", caption: "Graduation 2024" },
       ]
     },
     // More education entries...
