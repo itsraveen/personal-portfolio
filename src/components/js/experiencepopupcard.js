@@ -4,7 +4,6 @@ import * as styles from '../css/experiencepopupcard.module.css';
 
 function ExperiencePopUpCard({ isOpen, close, data }) {
   if (!isOpen) return null;
-  console.log(data); // Debugging to check the data structure
 
   return ReactDOM.createPortal(
     <div className={styles.overlay}>
@@ -14,7 +13,8 @@ function ExperiencePopUpCard({ isOpen, close, data }) {
         <p>{data.duration}</p>
         <p>{data.place}</p>
         <p>{data.subDescription}</p>
-        {data.responsibilities && (
+
+        {data.responsibilities && data.responsibilities.length > 0 && (
           <div>
             <h3>Responsibilities:</h3>
             <ul>
@@ -24,7 +24,8 @@ function ExperiencePopUpCard({ isOpen, close, data }) {
             </ul>
           </div>
         )}
-        {data.extraDetails && (
+
+        {data.extraDetails && data.extraDetails.length > 0 && (
           <div>
             <h3>More Details:</h3>
             <ul>
@@ -34,7 +35,8 @@ function ExperiencePopUpCard({ isOpen, close, data }) {
             </ul>
           </div>
         )}
-        {data.achievements && (
+
+        {data.achievements && data.achievements.length > 0 && (
           <div>
             <h3>Achievements:</h3>
             <ul>
@@ -44,8 +46,9 @@ function ExperiencePopUpCard({ isOpen, close, data }) {
             </ul>
           </div>
         )}
+
         <div className={styles.photoContainer}>
-          {data.images && data.images.map((image, index) => {
+          {data.images && data.images.length > 0 && data.images.map((image, index) => {
             const imagePath = require(`./../../images/${image.src}`); // Dynamically require the image
             return (
               <div key={index} className={styles.photoWrapper}>

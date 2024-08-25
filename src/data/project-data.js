@@ -1,5 +1,15 @@
 const projectData = [
     {
+        id: 0,
+        title: "CarCare",
+        category: "others",
+        image: "carcare2.png",
+        technologies: "AWS, React",
+        description: "A CEO predictor utilizing machine learning to analyze historical bidding data. Develeoped with React and hosted on AWS services.",
+        github: "https://github.com/itsraveen/carcare",
+        website: "" // No website provided
+    },
+    {
         id: 1,
         title: "tApp",
         category: "app",
@@ -88,7 +98,7 @@ const projectData = [
         description: "CheckMed is a MedTech Startup which uses Artificial Intelligence to provide personalized guidance and ongoing support to better plan and manage Medical Screenings to increase the uptake of medical screenings in Singapore.",
         github: null,
         website: "https://docs.google.com/presentation/d/12pTUQCoou2asPTnm_92mHXmIL7d9b47M/edit?usp=sharing&ouid=110786964280197235786&rtpof=true&sd=true" // No website provided
-    },
+    }
 ];
   
 export default projectData;
