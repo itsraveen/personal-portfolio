@@ -17,6 +17,18 @@ const Hero = () => {
         });
     }, []);
 
+    const openResume = () => {
+        window.open('/RaveenPrabhuCV.pdf', '_blank'); // Replace '/resume.pdf' with the actual path to your PDF document
+    };
+
+    const openLinkedIn = () => {
+        window.open('https://www.linkedin.com/in/raveenprabhu', '_blank');
+    };
+
+    const navigateToAbout = () => {
+        window.location.href = '/about'; // Replace '/about' with the actual path to your "About Me" page
+    };
+
     return (
         <header className={styles.hero}>
             <div className={styles.textSide}>
@@ -29,6 +41,19 @@ const Hero = () => {
                 <p className={styles.intro}>
                     I'm a (backend leaning) full stack developer from Singapore 🇸🇬, with experience in building web and mobile applications.
                 </p>
+                <div className={styles.buttonContainer}>
+                    <button className={styles.button} onClick={openResume}>
+                        My Resume
+                    </button>
+                
+                    <button className={styles.button} onClick={openLinkedIn}>
+                        LinkedIn
+                    </button>
+
+                    <button className={styles.button} onClick={navigateToAbout}>
+                        About Me
+                    </button>
+                </div>
             </div>
             <div className={styles.imageSide}>
                 <StaticImage

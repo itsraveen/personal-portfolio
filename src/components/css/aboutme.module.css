@@ -92,7 +92,7 @@
   margin: 0 10px; /* Space between the buttons */
   padding: 12px 24px; /* Adequate padding for the buttons */
   width: auto; /* Adjust width to content */
-  background-color: #6c757d; /* Updated color to match the button in the image */
+  background-color: #4a2f2f; /* Updated color to match the button in the image */
   color: white;
   border: none;
   cursor: pointer;
@@ -102,9 +102,10 @@
   font-weight: 500; /* Medium font weight for better visibility */
   text-transform: uppercase; /* Makes text uppercase */
   outline: none; /* Removes focus outline */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
-  background-color: #5a6268; /* Darker shade on hover */
+  background-color: #826666; /* Darker shade on hover */
 }
 
