@@ -27,7 +27,7 @@ const Hero = () => {
     };
 
     const navigateToAbout = () => {
-        window.location.href = '/about'; // Replace '/about' with the actual path to your "About Me" page
+        window.location.href = withPrefix('/about');
     };
 
     return (
