@@ -6,7 +6,7 @@ export const workExperiences = [
     title: "Solution Developer",
     duration: "Aug 2022 - Present",
     place: "Eye-Share Singapore Pte. Ltd",
-    subDescription: "Norwegian tech company building solutions for digitalization and management of documents, with a particular focus on invoice management. Provided 1st & 2nd level customer support and built custom solutions for clients in Asia & Europe.",
+    subDescription: "Norwegian tech company building solutions for digitalization and management of documents, with a particular focus on invoice management. Provided 2nd and 3rd level technical customer support and built custom solutions for clients in Asia & Europe.",
     responsibilities: [
       "Leveraged C# & .NET to implement advanced threading techniques, ensuring efficient management of shared resources to handle any concurrency issues. Optimized performance by 40%.",
       "Designed API integrations, facilitating seamless real-time communication and data exchange between our application and external systems such as SAP & Oracle. Leveraged C#, MongoDB & Azure for cloud deployment.",

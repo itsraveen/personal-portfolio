@@ -1,15 +1,5 @@
 const projectData = [
     {
-        id: 0,
-        title: "CarCare",
-        category: "others",
-        image: "carcare2.png",
-        technologies: "AWS, React",
-        description: "A CEO predictor utilizing machine learning to analyze historical bidding data. Develeoped with React and hosted on AWS services.",
-        github: "https://github.com/itsraveen/carcare",
-        website: "" // No website provided
-    },
-    {
         id: 1,
         title: "Car Care",
         category: "app",
