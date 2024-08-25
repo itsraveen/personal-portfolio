@@ -31,7 +31,15 @@ export const educations = [
       id: 1, 
       title: "Bachelor of Computing, Computer Science (Hons)", 
       duration: "2020 - 2024", 
-      place: "National University of Singapore" 
+      place: "National University of Singapore",
+      extraDetails: [
+        "Relevant coursework include Data Structures & Algorithms, Database Systems, Computer Networks, Operating Systems, Computer Architecture, Machine Learning, Artificial Intelligence, Cloud Computing",
+        "Teaching assistant for CS3240 Interaction Design (UIUX) Module",
+      ],
+      images: [
+        
+        
+      ]
     },
     // More education entries...
 ];
