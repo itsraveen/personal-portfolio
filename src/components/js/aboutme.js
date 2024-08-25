@@ -23,16 +23,19 @@ const AboutMe = () => {
 
   return (
     <div className={styles.mainContainer}>
+      <div className={styles.sectionTitle}>
+          <h2>About Me</h2>
+          <p className={styles.subHeading}>some fun facts about me</p>
+      </div>
       <div className={styles.aboutMeContainer}>
         <div className={styles.imageContainer}>
           <StaticImage
             src="../../images/profile2.png" // Replace with the path to your image
-            alt="Roy playing guitar"
+            alt="Raveen in Stockholm"
             placeholder="blurred"
           />
         </div>
         <div className={styles.textContainer}>
-          <h1 className={styles.title}>About me</h1>
           <p className={styles.description}>{aboutMeData.introduction}</p>
           <p className={styles.description}>{aboutMeData.mainDescription}</p>
           {showMore && (
@@ -42,15 +45,17 @@ const AboutMe = () => {
               ))}
             </div>
           )}
-          <div>
+          
+          <div className={styles.buttonContainer}>
             <button className={styles.button} onClick={toggleShowMore}>
               {showMore ? 'Read less' : 'Tell me more!'}
             </button>
+            
+            <button className={styles.button} onClick={scrollToSkills}>
+              See my skills
+            </button>
           </div>
-          
-          <button className={styles.button} onClick={scrollToSkills}>
-            See my skills
-          </button>
+
         </div>
       </div>
       <SkillsSection />

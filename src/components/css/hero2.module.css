@@ -1,0 +1,69 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+    color: #333;
+}
+
+.textSide {
+    flex: 1;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.name {
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 495px; /* Initial width that just shows "Hi! I'm" */
+    height: 70px; /* Enough height to fit text */
+    line-height: 70px; /* Centers text vertically */
+    background-color: transparent; /* Initial background color */
+    white-space: nowrap;
+}
+
+.name:hover {
+    width: 825px; /* Adjust width to fit "Hi! I'm Raveen Prabhu" */
+    background-color: #D7E8D5; /* Highlight color on hover */
+    animation: bounce 0.5s;
+}
+
+
+.roles {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.role {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.intro {
+    font-size: 1.2em;
+    max-width: 800px;
+}
+
+.imageSide {
+    flex: 0.75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 5%;
+}

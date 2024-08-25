@@ -1,19 +1,49 @@
 .portfolio {
-    padding: 60px 0;
+    padding: 20px 0; /* Keeps general padding around the entire section */
 }
 
 .sectionTitle {
+    position: relative;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px; /* Keeps a minimal margin below the title */
+}
+
+.sectionTitle h2 {
+    font-size: 7em; /* Large font size for impact */
+    font-weight: bold; /* Bold font weight for visibility */
+    z-index: 2; /* Ensures the text is above any overlapping elements */
+    display: inline-block;
+    padding: 0 40px; /* Padding on the sides of the title */
+    position: relative;
+    margin-bottom: -40px; /* Pulls the subheading closer to the title */
+}
+
+.sectionTitle p {
+    padding-top: 30px; /* Added padding to create space above the subheading */
+    font-size: 1.2em; /* Ensures the subheading is clearly readable */
+    margin: 0 auto; /* Centers the subheading and removes any default margin */
+    max-width: 80%; /* Controls the width to maintain readability */
+}
+
+.sectionTitle::before {
+    content: '';
+    position: absolute;
+    top: -50px; /* Adjusted to move the background higher */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Full width to align with the container */
+    height: 100%; /* Increased height to cover more area */
+    background: #f9f6f3; /* Beige background color */
+    z-index: 1; /* Keeps the background behind the text */
 }
 
 .filterContainer {
     padding: 0;
-    margin: 0 auto 35px auto;
+    margin: 20px auto; /* Margin adjustment to bring filters closer */
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 10px; /* Spacing between buttons */
+    gap: 10px; /* Maintains space between filter buttons */
 }
 
 .filterButton, .filterActive {
@@ -27,12 +57,12 @@
     background-color: #fff;
     border: none;
     border-radius: 50px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
 }
 
 .filterButton:hover, .filterActive {
     color: #fff;
-    background-color: #149ddd;
+    background-color: #af7bd1; /* Aesthetic hover effect */
 }
 
 .portfolio-container {
@@ -40,5 +70,5 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100vw;
-    margin: auto;
+    margin: auto; /* Center aligns the container within the section */
 }

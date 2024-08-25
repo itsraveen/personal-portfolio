@@ -1,8 +1,9 @@
-/* experience.module.css */
-
 .container {
-  display: flex;
-  min-height: 100vh; /* Ensures the minimum height of the whole container */
+  padding: 20px 0; /* Keeps general padding around the entire section */
+}
+
+.cards {
+  margin-left: 10%;
 }
 
 .heading {
@@ -14,29 +15,40 @@
   font-weight: bold; /* Bold font weight */
 }
 
-.sidebar {
-  width: 250px; /* Fixed sidebar width */
-  position: fixed;
-  margin-left: 3%;
-  top: 50%; /* Center sidebar vertically */
-  transform: translateY(-50%); /* Shift sidebar up by half its height to truly center */
-  height: auto; /* Height based on content */
-  overflow-y: auto; /* Allows scrolling on the Y-axis if content is too long */
-  background-color: transparent; /* Transparent background */
-  padding: 20px; /* Padding around the content in the sidebar */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for better visibility */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center content vertically */
+
+.sectionTitle {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px; /* Keeps a minimal margin below the title */
 }
 
-.content {
-  margin-left: 10%; /* Offset content to the right, same as sidebar width */
-  margin-top: 4%;
-  overflow-y: auto; /* Scrollable content area */
-  width: calc(100% - 250px); /* Remaining width */
-  padding: 20px; /* Padding around the content */
-  background-color: #ffffff; /* White background for the content area */
+.sectionTitle h2 {
+  font-size: 7em; /* Large font size for impact */
+  font-weight: bold; /* Bold font weight for visibility */
+  z-index: 2; /* Ensures the text is above any overlapping elements */
+  display: inline-block;
+  padding: 0 40px; /* Padding on the sides of the title */
+  position: relative;
+  margin-bottom: -40px; /* Pulls the subheading closer to the title */
+}
+
+.sectionTitle p {
+  padding-top: 30px; /* Added padding to create space above the subheading */
+  font-size: 1.2em; /* Ensures the subheading is clearly readable */
+  margin: 0 auto; /* Centers the subheading and removes any default margin */
+  max-width: 80%; /* Controls the width to maintain readability */
+}
+
+.sectionTitle::before {
+  content: '';
+  position: absolute;
+  top: -50px; /* Adjusted to move the background higher */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Full width to align with the container */
+  height: 100%; /* Increased height to cover more area */
+  background: #f9f6f3; /* Beige background color */
+  z-index: 1; /* Keeps the background behind the text */
 }
 
 .experienceSection {

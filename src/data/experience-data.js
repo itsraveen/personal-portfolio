@@ -1,3 +1,5 @@
+import { GiAchievement } from "react-icons/gi";
+
 export const workExperiences = [
   {
     id: 1,
@@ -24,7 +26,7 @@ export const workExperiences = [
 
 
   
-  export const educations = [
+export const educations = [
     { 
       id: 1, 
       title: "Bachelor of Computing, Computer Science (Hons)", 
@@ -40,7 +42,7 @@ export const workExperiences = [
       ]
     },
     // More education entries...
-  ];
+];
   
   export const leadershipExperiences = [
     {
@@ -55,7 +57,10 @@ export const workExperiences = [
       ],
       images: [
         { src: "cc-booth.jpg", caption: "Computing Club Booth with committee members" },
-        { src: "cc-meeting.jpg", caption: "1st Milestone meeting with the Management Committee" },
+        { src: "cc-meeting.jpg", caption: "1st Milestone meeting with the Management Committee" }
+      ],
+      achievements: [
+        "School of Computing clinched the champions title at the NUS Inter Faculty Games for the first time ever, in 20 years, under the leadership of the members of the 24th Management Committee!"
       ]
     },
     // More leadership experiences...
