@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 ; /* Adjust padding for left and right */
+  padding: 0 1rem; /* Adjust padding for left and right */
   height: 60px; /* Set the height */
   background-color: rgba(27, 30, 32, 0.902);
   color: #fff;
   transition: all 0.5s;
   position: fixed; 
   top: 0px; /* Place the navbar at the top of the viewport */
-  left: 0px; /* Align the navbar to the left */
-  width: 100%; /* Make the navbar full-width with 16px less */
+  left: 8px; /* Align the navbar to the left */
+  width: calc(100% - 48px); /* Make the navbar full-width with 16px less */
   z-index: 1000; /* Ensure the navbar appears above other content */
 }
   
