@@ -1,12 +1,36 @@
 /* experiencecard.module.css */
+
 .cardContainer {
   background-color: #ffffff; /* White background for the card */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   padding: 20px; /* Padding inside the card */
   margin-bottom: 20px; /* Space between cards */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease; /* Smooth transition for hover effects */
   max-width: 90%; /* Maximum width */
+  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text x="0" y="24" font-size="24">🚀</text></svg>') 16 16, pointer; /* Emoji cursor with fallback */
+  position: relative; /* For positioning the hover overlay */
+}
+
+/* Hover effect for the card */
+.cardContainer:hover {
+  transform: translateY(-5px); /* Lift the card up slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for lifted effect */
+  background-color: #f0f0f0; /* Light background color change on hover */
+}
+
+.cardContainer::after {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 24px;
+  color: #999999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cardContainer:hover::after {
+  opacity: 1; /* Show arrow on hover */
 }
 
 .cardTitle {
@@ -64,19 +88,4 @@
 .cardContainer:hover {
   transform: translateY(-5px); /* Lift the card up slightly */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for lifted effect */
-}
-
-.cardHeader {
-  display: flex;
-  justify-content: space-between; /* This separates the title and duration */
-  align-items: center;
-}
-
-.rightAligned {
-  margin-left: auto; /* This pushes the duration to the right */
-}
-
-.icon {
-  margin-right: 8px;  /* Adjust right margin for spacing between icon and text */
-  vertical-align: middle;  /* Aligns icon vertically with the text */
 }
