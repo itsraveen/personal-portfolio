@@ -24,14 +24,21 @@ const AboutMe = () => {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.sectionTitle}>
-          <h2>About Me</h2>
-          <p className={styles.subHeading}>some fun facts about me</p>
+        <h2>About Me</h2>
+        <p className={styles.subHeading}>some fun facts about me</p>
       </div>
       <div className={styles.aboutMeContainer}>
         <div className={styles.imageContainer}>
           <StaticImage
             src="../../images/profile2.png" // Replace with the path to your image
             alt="Raveen in Stockholm"
+            className={styles.profileImage}
+            placeholder="blurred"
+          />
+          <StaticImage
+            src="../../images/profile4.png" // Replace with the path to the hover image
+            alt="Alternative profile"
+            className={styles.hoverImage}
             placeholder="blurred"
           />
         </div>
