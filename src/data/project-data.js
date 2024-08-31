@@ -1,5 +1,14 @@
 const projectData = [
     {
+        id: 0,
+        title: "Personal Portfolio",
+        category: "app",
+        image: "portfolio.png",
+        technologies: "React, Gatsby",
+        description: "My very own personal portfolio website, the one you are on right now.",
+        github: "https://github.com/itsraveen/personal-portfolio"
+    },
+    {
         id: 1,
         title: "Car Care",
         category: "app",
