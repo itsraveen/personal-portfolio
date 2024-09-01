@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import SkillsSection from "./skills";
 import * as styles from "../css/aboutme.module.css"; // Ensure the path to your CSS module is correct
 import { aboutMeData } from "../../data/aboutme-data"; // Import the data
 
 const AboutMe = () => {
-  const [showMore, setShowMore] = useState(false);
+  const [showMore, setShowMore] = React.useState(false);
 
   const toggleShowMore = () => {
     setShowMore(!showMore);
@@ -30,15 +30,9 @@ const AboutMe = () => {
       <div className={styles.aboutMeContainer}>
         <div className={styles.imageContainer}>
           <StaticImage
-            src="../../images/profile2.png" // Replace with the path to your original image
+            src="../../images/profile2.png" // Replace with the path to your static image
             alt="Raveen in Stockholm"
             className={styles.profileImage}
-            placeholder="blurred"
-          />
-          <StaticImage
-            src="../../images/profile4.png" // Replace with the path to the hover image
-            alt="Alternative profile"
-            className={styles.hoverImage}
             placeholder="blurred"
           />
         </div>
@@ -52,17 +46,14 @@ const AboutMe = () => {
               ))}
             </div>
           )}
-          
           <div className={styles.buttonContainer}>
             <button className={styles.button} onClick={toggleShowMore}>
               {showMore ? 'Read less' : 'Tell me more!'}
             </button>
-            
             <button className={styles.button} onClick={scrollToSkills}>
               See my skills
             </button>
           </div>
-
         </div>
       </div>
       <SkillsSection />

@@ -5,42 +5,42 @@
 .sectionTitle {
   position: relative;
   text-align: center;
-  margin-bottom: 20px; /* Minimal margin below the title */
+  margin-bottom: 20px;
 }
 
 .sectionTitle h2 {
-  font-size: 7em; /* Large font size for impact */
-  font-weight: bold; /* Bold font weight for visibility */
-  z-index: 2; /* Ensures the text is above any overlapping elements */
+  font-size: 7em;
+  font-weight: bold;
+  z-index: 2;
   display: inline-block;
-  padding: 0 40px; /* Padding on the sides of the title */
+  padding: 0 40px;
   position: relative;
-  margin-bottom: -40px; /* Pulls the subheading closer to the title */
-  top: 10px; /* Adjusted to move the background higher */
+  margin-bottom: -40px;
+  top: 10px;
 }
 
 .sectionTitle p {
-  padding-top: 30px; /* Added padding to create space above the subheading */
-  font-size: 1.2em; /* Ensures the subheading is clearly readable */
-  margin: 0 auto; /* Centers the subheading and removes any default margin */
-  max-width: 80%; /* Controls the width to maintain readability */
+  padding-top: 30px;
+  font-size: 1.2em;
+  margin: 0 auto;
+  max-width: 80%;
 }
 
 .sectionTitle::before {
   content: '';
   position: absolute;
-  top: -40px; /* Adjusted to move the background higher */
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%; /* Full width to align with the container */
-  height: 100%; /* Increased height to cover more area */
-  background: #f9f6f3; /* Beige background color */
-  z-index: 1; /* Keeps the background behind the text */
+  width: 100%;
+  height: 100%;
+  background: #f9f6f3;
+  z-index: 1;
 }
 
 .aboutMeContainer {
   display: flex;
-  align-items: flex-start; /* Aligns items to the top of the container */
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -48,88 +48,52 @@
   position: relative;
   max-width: 30vw;
   margin: 2vw 5vw 10vh 15vw;
-  overflow: hidden; /* Ensure the hover image doesn't overflow */
-}
-
-.profileImage,
-.hoverImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.3s ease;
+  overflow: hidden;
 }
 
 .profileImage {
-  display: block; /* Ensures the image is a block-level element */
-}
-
-.hoverImage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
-.imageContainer:hover .profileImage {
-  opacity: 0;
-}
-
-.imageContainer:hover .hoverImage {
-  opacity: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .textContainer {
   flex: 1;
   padding-right: 10vw;
-  margin-top: 15vh; /* Pulls the text container up; adjust value as needed */
-  padding-top: 0; /* Reduce if there's unnecessary padding pushing content down */
-}
-
-.title {
-  margin-bottom: 20px;
+  margin-top: 15vh;
+  padding-top: 0;
 }
 
 .description {
   margin-bottom: 20px;
 }
 
-.interests {
-  display: flex;
-  margin-top: 20px;
-}
-
-.interest {
-  margin-right: 20px;
-  /* Add more styles for the interest labels if needed */
-}
-
 .buttonContainer {
   display: flex;
-  justify-content: center; /* Aligns the container center */
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 
 .button {
-  margin: 0 10px; /* Space between the buttons */
-  padding: 12px 24px; /* Adequate padding for the buttons */
-  width: auto; /* Adjust width to content */
-  background-color: #4a2f2f; /* Updated color to match the button in the image */
+  margin: 0 10px;
+  padding: 12px 24px;
+  width: auto;
+  background-color: #4a2f2f;
   color: white;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Adjust font size as needed */
-  font-weight: 500; /* Medium font weight for better visibility */
-  text-transform: uppercase; /* Makes text uppercase */
-  outline: none; /* Removes focus outline */
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
-  background-color: #826666; /* Darker shade on hover */
+  background-color: #826666;
 }
 
 /* Mobile Styles */
@@ -137,39 +101,39 @@
   .sectionTitle h2 {
     font-size: 3em;
     margin-top: 6vh;
-    text-align: center; /* Center title text */
+    text-align: center;
   }
 
   .sectionTitle p {
     font-size: 0.9em;
-    text-align: center; /* Center subtitle text */
+    text-align: center;
   }
 
   .aboutMeContainer {
     flex-direction: column;
-    align-items: center; /* Center the items within the container */
-    text-align: center; /* Center the text inside */
+    align-items: center;
+    text-align: center;
     margin: 0;
   }
 
   .imageContainer {
-    width: 90vw; /* Increased width for mobile */
-    max-width: none; /* Remove maximum width for better responsiveness */
-    margin-bottom: 2vh; /* Added spacing from text */
+    width: 90vw;
+    max-width: none;
+    margin-bottom: 2vh;
     margin: 0;
     display: flex;
-    justify-content: center; /* Center the image within the container */
+    justify-content: center;
   }
 
   .textContainer {
-    width: 90vw; /* Adjusted width for mobile */
+    width: 90vw;
     margin: 0;
     padding-left: 4vh;
-    text-align: center; /* Center the text inside */
+    text-align: center;
   }
 
   .button {
-    width: 100%; /* Full width buttons for mobile */
-    text-align: center; /* Center the button content */
+    width: 100%;
+    text-align: center;
   }
 }
