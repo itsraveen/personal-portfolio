@@ -6,33 +6,28 @@
   padding: 20px; /* Padding inside the card */
   margin-bottom: 20px; /* Space between cards */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
-  max-width: 90%; /* Maximum width */
+  max-width: 100%; /* Full width on smaller screens */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .cardTitle {
-  font-size: 20px;
+  font-size: 20px; /* Desktop font size */
   color: #333333; /* Darker text for better readability */
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.cardDuration {
-  font-size: 16px;
-  color: #666666;
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-
-.icon {
-  margin-right: 0.5rem;
-  font-size: 16px; /* Ensuring the icon is not too large */
-}
-
 .cardDescription {
-  font-size: 16px;
+  font-size: 16px; /* Desktop font size */
   color: #666666;
-  margin-bottom: 1rem; /* More space before sub-description */
+  margin-bottom: 1rem; /* Space before duration */
+}
+
+.cardDuration {
+  font-size: 16px; /* Desktop font size */
+  color: #666666;
+  display: block; /* Ensure it appears on its own line */
+  margin-top: 0.5rem; /* Space above duration */
 }
 
 .cardSubDescription {
@@ -79,4 +74,42 @@
 .icon {
   margin-right: 8px;  /* Adjust right margin for spacing between icon and text */
   vertical-align: middle;  /* Aligns icon vertically with the text */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .cardTitle {
+    font-size: 18px; /* Adjusted for mobile */
+  }
+
+  .cardDescription {
+    font-size: 14px; /* Adjusted for mobile */
+  }
+
+  .cardDuration {
+    font-size: 14px; /* Adjusted for mobile */
+    margin-top: 0.5rem; /* Space above duration */
+    display: block; /* Ensure it appears on its own line below description */
+  }
+}
+
+@media (max-width: 480px) {
+  .cardTitle {
+    font-size: 1.2em; /* Further reduced font size */
+  }
+
+  .cardDuration {
+    font-size: 0.8em; /* Adjusted for mobile */
+    margin-top: 0.5rem; /* Space above duration */
+    margin-left: 0.2rem; /* Space above duration */
+    display: block; /* Ensure it appears on its own line below description */
+  }
+
+  .cardDescription {
+    font-size: 1.0em; /* Further reduced font size */
+  }
+
+  .cardSubDescription {
+    font-size: 0.8em; /* Further reduced font size */
+  }
 }
