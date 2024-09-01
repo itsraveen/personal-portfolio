@@ -48,32 +48,35 @@
   position: relative;
   max-width: 30vw;
   margin: 2vw 5vw 10vh 15vw;
+  overflow: hidden; /* Ensure the hover image doesn't overflow */
+}
+
+.profileImage,
+.hoverImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
 }
 
 .profileImage {
-  width: 100%;
-  height: auto;
-  transition: opacity 0.3s ease;
+  display: block; /* Ensures the image is a block-level element */
 }
 
 .hoverImage {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1; /* Ensures hover image is above the profile image */
-}
-
-.imageContainer:hover .hoverImage {
-  opacity: 1;
+  z-index: 1;
 }
 
 .imageContainer:hover .profileImage {
   opacity: 0;
+}
+
+.imageContainer:hover .hoverImage {
+  opacity: 1;
 }
 
 .textContainer {
