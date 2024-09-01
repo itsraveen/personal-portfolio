@@ -76,14 +76,11 @@ html, body {
   }
 
   .content p {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .icons {
     font-size: 1.2em;
   }
-
-  .builtby {
-    font-size: 0.7rem;
-  }
 }
+
