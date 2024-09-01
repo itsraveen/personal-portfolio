@@ -30,7 +30,7 @@ const AboutMe = () => {
       <div className={styles.aboutMeContainer}>
         <div className={styles.imageContainer}>
           <StaticImage
-            src="../../images/profile2.png" // Replace with the path to your image
+            src="../../images/profile2.png" // Replace with the path to your original image
             alt="Raveen in Stockholm"
             className={styles.profileImage}
             placeholder="blurred"
@@ -67,7 +67,7 @@ const AboutMe = () => {
       </div>
       <SkillsSection />
     </div>
-  )
+  );
 }
 
 export default AboutMe;
