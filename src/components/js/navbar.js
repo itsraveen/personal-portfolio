@@ -32,14 +32,9 @@ const Navbar = () => {
       {isMobile ? (
         <>
           <div className={styles.navbarRight}>
-            {/* <button className={styles.menuButton} onClick={toggleMenu}>
-              <Menu size={24} />
-            </button> */}
-
             <button className={styles.menuButton} onClick={toggleMenu}>
-              ☰ {/* Temporary replacement for testing */}
-            </button>
-
+              <Menu size={24} />
+            </button> 
           </div>
           {isMenuOpen && (
             <div className={styles.mobileMenu}>
