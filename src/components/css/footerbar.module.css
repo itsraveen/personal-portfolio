@@ -1,60 +1,89 @@
+/* Reset body and html margins and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .footerBar {
   background-color: #4a2f2f;
   color: white;
   text-align: center;
-  padding: 20px;
-  max-height: 30vh; /* Set maximum height to 30% of viewport height */
-  overflow-y: auto; /* Add scrollbar if content exceeds maximum height */
+  padding: 20px 0;
+  width: 100vw; /* Ensure the footer spans the entire viewport width */
+  box-sizing: border-box;
+  margin: 0; /* Ensure no additional margins are added */
 }
 
-.footerBar .content h1 {
-font-size: 2em;
+.content {
+  max-width: 1200px; /* Centers content within a reasonable width */
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px;
 }
 
-.footerBar .content p {
-font-size: 1.2em;
-margin: 10px 0;
+.content h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
 }
 
-.footerBar .icons {
-font-size: 1.5em;
-margin: 20px 0;
+.content h2 {
+  font-size: 1.25em;
 }
 
-.footerBar .icons a {
-color: white;
-margin: 0 10px;
+.content p {
+  font-size: 1.0em;
+  margin: 10px 0;
 }
 
-.footerBar .icons a:hover {
-color: #ccc;
+.icons {
+  font-size: 1.5em;
+  margin: 20px 0;
 }
 
-.footerBar footer {
-position: absolute;
-bottom: 0;
-width: 100%;
-font-size: 0.8em;
-padding: 10px;
+.icons a {
+  color: white;
+  margin: 0 10px;
+  transition: color 0.3s ease;
 }
 
+.icons a:hover {
+  color: #ccc;
+}
 
 .builtby {
-font-size: .75rem !important; /* Smaller font size, you can adjust as necessary */
-padding-top: 50px; /* Adjust as needed */
-color: #7B6F71;
-display: flex; /* Use flexbox to align items inline */
-justify-content: center; /* Center content horizontally */
-align-items: center; /* Center items vertically */
-flex-wrap: wrap; /* Allow items to wrap */
+  font-size: 0.75rem;
+  padding-top: 30px;
+  color: #7B6F71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .builtby a {
-color: #7B6F71;
-margin-left: 4px;
-text-decoration: underline;
+  color: #7B6F71;
+  margin-left: 4px;
+  text-decoration: underline;
 }
 
 .builtby a:hover {
-color: #ccc;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 1.5em;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+
+  .icons {
+    font-size: 1.2em;
+  }
+
+  .builtby {
+    font-size: 0.7rem;
+  }
 }
