@@ -84,4 +84,11 @@ background-color: #f8f8f8;
     .languageName {
       font-size: 16px; /* Adjust font size for mobile */
     }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center; /* Center the image within the container */
+    }
   }
