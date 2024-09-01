@@ -71,3 +71,65 @@
   color: #999999;
   margin-bottom: 10px;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .cards {
+    margin: 0 10px; /* Remove left margin on smaller screens */
+  }
+
+  .sectionTitle h2 {
+    font-size: 4em; /* Adjust font size for smaller screens */
+    padding: 0 0px; /* Reduced padding */
+    margin-top: 5vh;
+  }
+
+  .sectionTitle p {
+    font-size: 1em; /* Adjust font size for smaller screens */
+    max-width: 90%; /* Increase max-width for better readability */
+  }
+
+  .experienceSection {
+    margin-bottom: 0px; /* Reduced margin for smaller screens */
+  }
+
+  .title {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .description {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .duration {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle h2 {
+    font-size: 2.5em; /* Further reduced font size for very small screens */
+    padding: 0 10px; /* Further reduced padding */
+  }
+
+  .sectionTitle p {
+    font-size: 0.9em; /* Further reduced font size for very small screens */
+    max-width: 95%; /* Increase max-width for very small screens */
+  }
+
+  .experienceSection {
+    margin-bottom: 10px; /* Further reduced margin for very small screens */
+  }
+
+  .title {
+    font-size: 18px; /* Further reduced font size */
+  }
+
+  .description {
+    font-size: 12px; /* Further reduced font size */
+  }
+
+  .duration {
+    font-size: 10px; /* Further reduced font size */
+  }
+}

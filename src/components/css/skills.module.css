@@ -65,4 +65,30 @@ background-color: #f8f8f8;
     transform: scale(1);
     opacity: 1;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .language {
+      width: 30%; /* Adjust width to accommodate smaller screens */
+      margin-bottom: 20px; /* Adjust margin for better spacing */
+    }
   
+    .languageImgWrapper {
+      padding: 5px 8px; /* Reduced padding for mobile */
+    }
+  
+    .languageImg {
+      max-width: 60px; /* Smaller icon size for mobile */
+    }
+  
+    .languageName {
+      font-size: 16px; /* Adjust font size for mobile */
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center; /* Center the image within the container */
+    }
+  }

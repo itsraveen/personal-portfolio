@@ -1,3 +1,10 @@
+/* Reset body and html margins and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -95,4 +102,72 @@
   .button:hover {
     background-color: #826666; /* Darker shade on hover */
   }
-  
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack text and image vertically */
+        /* padding: 10px; */
+        height: auto; /* Allow height to adjust based on content */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 5vh;
+    }
+
+    .textSide {
+        padding-left: 0; /* Remove left padding */
+        padding-right: 0;
+    }
+
+    .name {
+        width: auto; /* Allow the name to adjust its width */
+        font-size: 1.0em; /* Adjust font size for smaller screens */
+        height: auto; /* Adjust height */
+        line-height: normal; /* Adjust line height */
+        word-wrap: break-word; /* Ensure long words break */
+    }
+
+    .roles {
+        font-size: 1.25em; /* Adjust font size for smaller screens */
+        margin: 15px 0;
+    }
+
+    .intro {
+        font-size: 0.8em; /* Adjust font size for smaller screens */
+        max-width: 90%; /* Restrict width to fit smaller screens */
+        word-wrap: break-word; /* Ensure long words break */
+    }
+
+    .imageSide {
+        margin: 20px 0;
+        width: 100%; /* Allow image to take up full width */
+        padding: 0;
+    }
+
+    .buttonContainer {
+        flex-direction: row; /* Stack buttons vertically */
+    }
+
+    .button {
+        margin: 0 10px; /* Add space between stacked buttons */
+        padding: 10px 20px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .name:hover {
+        width: auto; /* Adjust width to fit "Hi! I'm Raveen Prabhu" */
+        background-color: #D7E8D5; /* Highlight color on hover */
+        animation: bounce 0.5s;
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+}

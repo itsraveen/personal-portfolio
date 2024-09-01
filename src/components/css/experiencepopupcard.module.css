@@ -56,3 +56,24 @@
   font-size: 14px;
   color: #666;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .popupCard {
+    font-size: 0.9em; /* Smaller font size on mobile */
+  }
+
+  .photoContainer {
+    flex-direction: column; /* Arrange photos in a column on mobile */
+    align-items: center;
+  }
+
+  .photoWrapper {
+    width: 100%; /* Make each photo take full width on mobile */
+    margin-bottom: 20px;
+  }
+
+  .caption {
+    font-size: 12px; /* Smaller font size for captions on mobile */
+  }
+}

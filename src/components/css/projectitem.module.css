@@ -1,16 +1,15 @@
 .portfolioItem {
-  /* Removed the fixed height and set it using padding-top to maintain the aspect ratio */
-  width: calc(33% - 30px); /* 3 items per row, accounting for the gap */
+  width: calc(100% - 20px); /* Full width minus the margin */
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: all 0.3s ease-in-out;
-  flex: 0 0 calc(30% - 60px); /* Smaller flex-basis and larger gap */
-  margin: 30px; /* This will be the gap between the items */
-  position: relative;
-  box-sizing: border-box; /* This ensures the padding is included in the width and height */
+  margin: 10px auto; /* Center the item with auto margin */
+  flex: 0 0 100%; /* Full width for mobile */
+  box-sizing: border-box;
 }
+
 
 .portfolioWrap {
   position: relative;
@@ -71,4 +70,20 @@
 
 .projectLink:hover {
   color: #ccc;
+}
+
+@media (min-width: 768px) {
+  .portfolioItem {
+    width: calc(48% - 30px); /* Two items per row, considering the margin */
+    flex: 0 0 calc(48% - 30px); /* Two items per row */
+    margin: 20px; /* Spacing between items */
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolioItem {
+    width: calc(30% - 30px); /* Three items per row, considering the margin */
+    flex: 0 0 calc(30% - 30px); /* Three items per row */
+    margin: 20px; /* Spacing between items */
+  }
 }

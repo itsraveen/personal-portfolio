@@ -2,67 +2,119 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem; /* Adjust padding for left and right */
-  height: 60px; /* Set the height */
-  background-color: rgba(27, 30, 32, 0.902);
+  padding: 0 5%;
+  height: 60px;
+  background-color: #333;
   color: #fff;
-  transition: all 0.5s;
-  position: fixed; 
-  top: 0px; /* Place the navbar at the top of the viewport */
-  left: 8px; /* Align the navbar to the left */
-  width: calc(100% - 48px); /* Make the navbar full-width with 16px less */
-  z-index: 1000; /* Ensure the navbar appears above other content */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
 }
-  
-  .navbarLeft {
-    flex: 1; /* Take up remaining space */
-    margin-left: 4rem;
+
+.navbarLeft {
+  flex: 1;
+}
+
+.navbarRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Ensure vertical centering */
+}
+
+.navbarBrand {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbarMenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarItem {
+  margin-left: 1.5rem;
+}
+
+.navbarLink {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  position: relative; /* Necessary for ::before pseudo-element */
+}
+
+.navbarLink::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.navbarLink:hover::before {
+  width: 100%;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem; /* Adjust icon size */
+  z-index: 1100; /* Ensure it's on top */
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(27, 30, 32, 0.902);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; /* Stack menu items vertically */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.mobileNavbarMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobileNavbarItem {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 3%;
   }
-  
-  .navbarRight {
-    display: flex;
-    margin-right: 4rem;
-  }
-  
+
   .navbarBrand {
-    font-size: 28px;
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #fff;
+    font-size: 1.2rem;
   }
-  
-  .navbarMenu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
+
   .navbarItem {
-    margin-right: 2rem;
+    margin-left: 1rem;
   }
-  
+
   .navbarLink {
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    position: relative; /* Add relative positioning */
+    font-size: 0.9rem;
   }
-  
-  .navbarLink::before {
-    content: '';
-    position: absolute;
-    bottom: -2px; /* Position the underline below the text */
-    left: 0; /* Start the underline from the left */
-    width: 0; /* Initially hide the underline */
-    height: 2px; /* Set the height of the underline */
-    background-color: #fff; /* Color of the underline */
-    transition: width 0.3s ease; /* Add a transition for the width */
+}
+
+@media (max-width: 480px) {
+  .navbarRight {
+    display: flex; /* Ensure the menu button is shown */
   }
-  
-  .navbarLink:hover::before {
-    width: 100%; /* Expand the underline to 100% on hover */
-  }
-  
+}

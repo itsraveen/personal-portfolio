@@ -14,13 +14,13 @@ const Experience = () => {
         </div>
         <div className={styles.cards}>
           <div id="work">
-            <ExperienceSection title="Work Experience" experiences={workExperiences} />
+            <ExperienceSection title="💼 Work Experience" experiences={workExperiences} />
           </div>
           <div id="education">
-            <ExperienceSection title="Education" experiences={educations} />
+            <ExperienceSection title="👨‍🎓 Education" experiences={educations} />
           </div>
           <div id="leadership">
-            <ExperienceSection title="Leadership Experience" experiences={leadershipExperiences} />
+            <ExperienceSection title="🎤 Leadership Experience" experiences={leadershipExperiences} />
           </div>
         </div>
       </div>

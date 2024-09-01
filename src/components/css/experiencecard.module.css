@@ -89,3 +89,39 @@
   transform: translateY(-5px); /* Lift the card up slightly */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for lifted effect */
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .cardTitle {
+    font-size: 18px; /* Adjusted for mobile */
+  }
+
+  .cardDescription {
+    font-size: 14px; /* Adjusted for mobile */
+  }
+
+  .cardDuration {
+    font-size: 14px; /* Adjusted for mobile */
+    margin-top: 0.5rem; /* Space above duration */
+    display: block; /* Ensure it appears on its own line below description */
+  }
+}
+
+@media (max-width: 480px) {
+  .cardTitle {
+    font-size: 1.2em; /* Further reduced font size */
+  }
+
+  .cardDuration {
+    font-size: 0.9em; /* Further reduced font size */
+    display: block; /* Ensure it appears on its own line below description */
+  }
+
+  .cardDescription {
+    font-size: 0.9em; /* Further reduced font size */
+  }
+
+  .cardSubDescription {
+    font-size: 0.8em; /* Further reduced font size */
+  }
+}
