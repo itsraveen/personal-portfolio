@@ -44,5 +44,14 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "allowScripts": {
+    "sharp@0.32.6": true,
+    "lmdb@2.5.2": true,
+    "lmdb@2.5.3": true,
+    "msgpackr-extract@3.0.3": true,
+    "fsevents@2.3.3": true,
+    "gatsby@5.13.7": true,
+    "gatsby-cli@5.13.3": true
   }
 }
