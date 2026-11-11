@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
-import ExperiencePopUpCard from './ExperiencePopUpCard';
+import ExperiencePopUpCard from './experiencepopupcard';
 import * as styles from '../css/experiencecard.module.css';
 import { FaBriefcase, FaRegCalendarAlt } from 'react-icons/fa';  // Import the icons
 
