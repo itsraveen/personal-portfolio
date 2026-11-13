@@ -11,12 +11,22 @@ function ExperiencePopUpCard({ isOpen, close, data }) {
         <button className={styles.closeButton} onClick={close}>&times;</button>
         <h2>{data.title}</h2>
         <p>{data.duration}</p>
-        <p>{data.place}</p>
+        <p>
+          {data.place}
+          {data.link && (
+            <>
+              {' · '}
+              <a href={data.link} target="_blank" rel="noopener noreferrer">
+                {data.link.replace(/^https?:\/\//, '')}
+              </a>
+            </>
+          )}
+        </p>
         <p>{data.subDescription}</p>
 
         {data.responsibilities && data.responsibilities.length > 0 && (
           <div>
-            <h3>Responsibilities:</h3>
+            <h3>Highlights:</h3>
             <ul>
               {data.responsibilities.map((item, index) => (
                 <li key={index}>{item}</li>

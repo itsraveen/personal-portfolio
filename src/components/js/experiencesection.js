@@ -11,6 +11,7 @@ function ExperienceSection({ title, experiences }) {
           title={exp.title} 
           duration={exp.duration} 
           place={exp.place}
+          link={exp.link}
           subDescription={exp.subDescription}
           responsibilities={exp.responsibilities}
           extraDetails={exp.extraDetails}

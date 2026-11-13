@@ -30,8 +30,8 @@ const AboutMe = () => {
       <div className={styles.aboutMeContainer}>
         <div className={styles.imageContainer}>
           <StaticImage
-            src="../../images/profile2.png" // Replace with the path to your static image
-            alt="Raveen in Stockholm"
+            src="../../images/profile3.png" // Replace with the path to your static image
+            alt="Raveen Prabhu smiling against a textured cream wall"
             className={styles.profileImage}
             placeholder="blurred"
           />

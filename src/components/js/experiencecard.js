@@ -4,7 +4,7 @@ import ExperiencePopUpCard from './experiencepopupcard';
 import * as styles from '../css/experiencecard.module.css';
 import { FaBriefcase, FaRegCalendarAlt } from 'react-icons/fa';  // Import the icons
 
-function ExperienceCard({ title, duration, place, subDescription, responsibilities, extraDetails, images, achievements }) {
+function ExperienceCard({ title, duration, place, link, subDescription, responsibilities, extraDetails, images, achievements }) {
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
 
   const openPopUp = () => setIsPopUpOpen(true);
@@ -14,6 +14,7 @@ function ExperienceCard({ title, duration, place, subDescription, responsibiliti
     title,
     duration,
     place,
+    link,
     subDescription,
     responsibilities,
     extraDetails,
@@ -32,7 +33,17 @@ function ExperienceCard({ title, duration, place, subDescription, responsibiliti
           </div>
         </div>
         <div className={styles.cardDescription}>
-            <FaBriefcase className={styles.icon} />{place}</div>
+            <FaBriefcase className={styles.icon} />{place}
+            {link && (
+              <>
+                {' · '}
+                {/* Stop the click from also opening the popup */}
+                <a href={link} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>
+                  {link.replace(/^https?:\/\//, '')}
+                </a>
+              </>
+            )}
+        </div>
         {subDescription && (
           <div className={styles.cardSubDescription}>{subDescription}</div>
         )}

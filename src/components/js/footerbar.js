@@ -7,7 +7,7 @@ const FooterBar = () => {
     <div className={styles.footerBar}>
       <div className={styles.content}>
         <h1>Raveen Prabhu</h1>
-        <h2>Full-Stack Developer</h2>
+        <h2>MBA @ BU · Product, Strategy & GTM</h2>
         <div className={styles.icons}>
           <a href="https://www.linkedin.com/in/raveenprabhu/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />

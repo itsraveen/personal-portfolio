@@ -35,12 +35,12 @@ const Hero = () => {
             <div className={styles.textSide}>
                 <h1><span className={styles.name}>Hi! I'm Raveen Prabhu 🤠</span></h1>
                 <p className={styles.roles}>
-                    <span className={`${styles.role} ${styles.designer}`} data-hover-bg="#d2bbc2">designer</span>
-                    <span > & </span>
-                    <span className={`${styles.role} ${styles.developer}`} data-hover-bg="#ad8578">full stack developer</span>
+                    <span className={`${styles.role} ${styles.designer}`} data-hover-bg="#d2bbc2">Ex-Software Engineer 🇸🇬</span>
+                    <span > · </span>
+                    <span className={`${styles.role} ${styles.developer}`} data-hover-bg="#ad8578">MBA @ BU 🇺🇸</span>
                 </p>
                 <p className={styles.intro}>
-                    I'm a (backend leaning) full stack developer from Singapore 🇸🇬, with experience in building web and mobile applications.
+                    Next up: a Summer 2027 product & GTM internship at a fintech or AI startup.
                 </p>
                 <div className={styles.buttonContainer}>
                     <button className={styles.button} onClick={openResume}>
@@ -59,7 +59,7 @@ const Hero = () => {
             <div className={styles.imageSide}>
                 <StaticImage
                     alt="Raveen Prabhu, a professional in a casual setting"
-                    src="../../images/profile3.png"
+                    src="../../images/profile5.png"
                 />
             </div>
         </header>
