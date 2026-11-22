@@ -1,5 +1,27 @@
 const projectData = [
     {
+        id: 12,
+        title: "Hoka vs On",
+        category: "business",
+        image: "hoka-vs-on.png",
+        technologies: "Marketing Analytics",
+        description: "Used 574 social posts and five years of search data to recommend Hoka's next marketing move. MK723 Social Media Listening.",
+        github: null,
+        website: "/projects_pdf/Hoka_vs_On.pdf",
+        website2: null
+    },
+    {
+        id: 11,
+        title: "JetBlue Turnaround",
+        category: "business",
+        image: "jetblue.png",
+        technologies: "Strategy & Finance",
+        description: "Diagnosed why JetBlue loses money on $9B+ revenue and stress-tested its turnaround plan. MBA Integrated Project.",
+        github: null,
+        website: "/projects_pdf/JetBlue.pdf",
+        website2: null
+    },
+    {
         id: 0,
         title: "Personal Portfolio",
         category: "app",

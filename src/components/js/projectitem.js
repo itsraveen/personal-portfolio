@@ -12,7 +12,9 @@ const ProjectItem = ({ project }) => {
         <div className={styles.projectDescription}>
           <div>
             <h3 className={styles.projectTitle}>{project.title}</h3>
-            <h4 className={styles.projectSubTitle}>{project.technologies}</h4>
+            {project.technologies && (
+              <h4 className={styles.projectSubTitle}>{project.technologies}</h4>
+            )}
             <p className={styles.projectPara}>{project.description}</p>
           </div>
           <div className={styles.projectLinks}>

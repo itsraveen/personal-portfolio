@@ -21,6 +21,7 @@ const Projects = () => {
           <button onClick={() => setFilter('all')} className={filter === 'all' ? styles.filterActive : styles.filterButton}>All</button>
           <button onClick={() => setFilter('app')} className={filter === 'app' ? styles.filterActive : styles.filterButton}>App</button>
           <button onClick={() => setFilter('uiux')} className={filter === 'uiux' ? styles.filterActive : styles.filterButton}>UI/UX</button>
+          <button onClick={() => setFilter('business')} className={filter === 'business' ? styles.filterActive : styles.filterButton}>Business</button>
           <button onClick={() => setFilter('others')} className={filter === 'others' ? styles.filterActive : styles.filterButton}>Others</button>
         </div>
         <div className={styles.portfolioContainer} data-aos="fade-up" data-aos-delay="100">
