@@ -1,5 +1,16 @@
 const projectData = [
     {
+        id: 13,
+        title: "The Shark Tank Playbook",
+        category: "business",
+        image: "shark-tank.png",
+        technologies: "Data Analytics & Regression",
+        description: "Analyzed 1,485 Shark Tank pitches to show founders their odds of a deal, how much equity they give up, and which Sharks negotiate hardest. QM716 team project.",
+        github: null,
+        website: "/projects_pdf/Shark_Tank.pdf",
+        website2: null
+    },
+    {
         id: 12,
         title: "Hoka vs On",
         category: "business",
