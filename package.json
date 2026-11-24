@@ -53,5 +53,8 @@
     "fsevents@2.3.3": true,
     "gatsby@5.13.7": true,
     "gatsby-cli@5.13.3": true
+  },
+  "overrides": {
+    "msgpackr": "^1.11.5"
   }
 }
